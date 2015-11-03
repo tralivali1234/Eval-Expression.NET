@@ -1,13 +1,25 @@
 ---
 layout: post
 ---
+
+<!--
+// Website
+	- Title
+	- Favicon
+	- More product
+	- Code (everywhere)
+	- Pricing Text
+	- Open Source Text
+	- Remove Space
+	- Padding Mobile
+	- Social Icon Color
+!-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 		<meta name="description" content="Evaluate, Compile and Execute code and expression at runtime">
-		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<title>Evaluate, Compile and Execute code and expression at runtime</title>
 		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -35,7 +47,7 @@ layout: post
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="jumbotron">
-						<h1 class="display-2">Eval.NET</h1>
+						<h1 class="display-3">Eval.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
@@ -146,7 +158,7 @@ foreach(var item in list)
 			<div class="row">
 				<div class="col-lg-6">
 					<h2>Pricing</h2>
-					<p>Become a <span class="text-bold text-red">PRO</span> now and save time and money.</p>
+					<p>Become a <span class="text-bold text-green">PRO</span> now and save time and money.</p>
 					<p>Thousands of <span class="text-bold">development hours</span>, thousands of <span class="text-bold">unit test</span> to make Eval.NET the best and robust expression evaluator for .NET language.</p>
 					<p>PRO License starting at $299</p>
 					<p class="text-muted">Each additional developer seat at $100</p>
@@ -247,7 +259,7 @@ foreach(var item in list)
 						<div class="card-block">
 							<h4 class="card-title">Forum</h4>
 						</div>
-						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
+						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-weixin fa-5x"></i></a>
 						<div class="card-block">
 							<p class="card-text">Consult the forum to propose a new feature or to discuss about the library</p>
 							<a href="https://zzzprojects.uservoice.com/forums/327759-eval-expression-net" target="_blank">Forum</a>
@@ -291,6 +303,15 @@ foreach(var item in list)
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-55584370-3', 'auto');
+	  ga('send', 'pageview');
+	</script>
   </body>
 </html>
 
@@ -302,8 +323,8 @@ foreach(var item in list)
 .text-bold {
 	font-weight: 700;
 }
-.text-red {
-	color: #c00;
+.text-green {
+	color: rgb(68, 157, 68);
 }
 @media (max-width: 61em) {
   .text-center-md-down {
@@ -381,6 +402,7 @@ header .jumbotron {
 	background-color: transparent;
 	color: #f1f1f1;
 	margin-bottom: 0px;
+	padding-top: 20px;
 }
 header .jumbotron .lead .btn {
 	width: 175px;
@@ -425,7 +447,7 @@ header #carousel .highlight pre {
 }
 @media (max-width: 33em) {
 	header .jumbotron h1.display-2{
-		font-size: 5rem;
+		font-size: 4.5rem;
 	}
 	header .jumbotron .lead .btn {
 		margin-bottom: 20px;
