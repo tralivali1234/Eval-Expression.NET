@@ -20,6 +20,7 @@ layout: post
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Evaluate, Compile and Execute code and expression at runtime">
+		<meta name="keywords" content="NET, CSharp, VB, Eval, Evaluate, Compile, Execute">
 		<title>Evaluate, Compile and Execute code and expression at runtime</title>
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
