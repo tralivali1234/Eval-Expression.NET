@@ -10,7 +10,7 @@ layout: post
 		<title>Evaluate, Compile and Execute code and expression at runtime</title>
 		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="stylesheets/github.css" />
+		<link rel="stylesheet" href="/css/github.css" />
 	</head>
 	<body>
   
