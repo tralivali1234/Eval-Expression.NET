@@ -39,14 +39,11 @@ layout: post
 						<h1 class="display-3">Eval.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
-						<div class="lead">
+						<div class="lead text-center-xs-down">
 							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-							<p class="text-muted">* FREE up to 50 characters</p>
-							<p style="display: none">
-								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" alt="download nuget"><img src="https://img.shields.io/nuget/v/Z.Expressions.Eval.svg" /></a>
-								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" alt="download nuget"><img src="https://img.shields.io/nuget/dt/Z.Expressions.Eval.svg" /></a>
-							</p>							
+							<p />
+							<p class="text-muted">* FREE Version - up to 50 characters</p>						
 						</div>
 					</div>
 				</div>
@@ -75,7 +72,7 @@ int result = Eval.Execute<int>(@"x + y", new { x = 1, y = 2})
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
-									<h3>to complex code...</h3>
+									<h3>...to complex code...</h3>
 								</div>
 							</div>
 							<div class="carousel-item">
@@ -85,7 +82,7 @@ int result = Eval.Execute<int>(@"x + y", new { x = 1, y = 2})
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
-									<h3>with an easy to use API</h3>
+									<h3>...with an easy to use API!</h3>
 								</div>
 							</div>
 						</div>
@@ -102,7 +99,7 @@ int result = Eval.Execute<int>(@"x + y", new { x = 1, y = 2})
 					<a id="execute" href="#"></a>
 					<h2>Eval.Execute</h2>
 					<hr class="m-y-md" />
-					<p>Evaluate and execute a code or expression</p>
+					<p>Evaluate and execute a code or an expression</p>
 					<h3>Using Anonymous Class</h3>
 {% highlight csharp %}
 int result = Eval.Execute<int>("x + y", new { x = 1, y = 2})
@@ -122,7 +119,7 @@ int result = s.Eval<int>(new { x = 1, y = 2 });
 					<a id="compile" href="#"></a>
 					<h2>Eval.Compile</h2>
 					<hr class="m-y-md" />
-					<p>Compile a code or expression and return a delegate to execute</p>
+					<p>Compile a code or an expression and return a delegate to execute</p>
 					<h3>Using custom Delegate</h3>
 {% highlight csharp %}
 Func<int> compiled = Eval.Compile<Func<int>>("x + y", new { x = 1, y = 2})
@@ -147,13 +144,14 @@ foreach(var item in list)
 			<div class="row">
 				<div class="col-lg-6">
 					<h2>Pricing</h2>
-					<p>Become a <span class="text-bold text-green">PRO</span> now and save time and money.</p>
-					<p>Thousands of <span class="text-bold">development hours</span>, thousands of <span class="text-bold">unit test</span> to make Eval.NET the best and robust expression evaluator for .NET language.</p>
-					<p>PRO License starting at $299</p>
-					<p class="text-muted">Each additional developer seat at $100</p>
+					<hr class="m-y-md" />
+					<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
+					<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval.NET the best and most robust expression evaluator for .NET language.</p>
+					<p>PRO License starts at <span class="text-bold text-green">ONLY $299</span></p>
+					<p class="text-muted">$100/Additional developer seat</p>
 				</div>
 				<div class="col-lg-6">
-					<table class="table">
+					<table class="table table-hover table-bordered">
 						<thead class="thead-inverse">
 							<tr>
 								<th></th>
@@ -194,7 +192,7 @@ foreach(var item in list)
 								<option>Eval.NET $599 (4 seats)</option>
 								<option>Eval.NET $699 (5-9 seats)</option>
 								<option>Eval.NET $899 (10-14 seats)</option>
-								<option>Eval.NET - 15+ seats - Contact Us</option>
+								<option>Eval.NET $Contact us (15+ seats)</option>
 							</select>
 						</fieldset>
 						<div class="checkbox">
@@ -224,7 +222,7 @@ foreach(var item in list)
 						</div>
 						<a href="/docs/" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
 						<div class="card-block">
-							<p class="card-text">Consult and print our complete documentation to help you get started</p>
+							<p class="card-text">Consult our complete documentation to help you get started</p>
 							<a href="/docs/" target="_blank">Documentation</a>
 						</div>
 					</div>
@@ -237,7 +235,7 @@ foreach(var item in list)
 						</div>
 						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
 						<div class="card-block">
-							<p class="card-text">Email our team for any type of questions</p>
+							<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
 							<a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>
 						</div>
 					</div>
@@ -250,7 +248,7 @@ foreach(var item in list)
 						</div>
 						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-weixin fa-5x"></i></a>
 						<div class="card-block">
-							<p class="card-text">Consult the forum to propose a new feature or to discuss about the library</p>
+							<p class="card-text">Visit the forum to propose new features or to discuss about the library</p>
 							<a href="https://zzzprojects.uservoice.com/forums/327759-eval-expression-net" target="_blank">Forum</a>
 						</div>
 					</div>
@@ -263,7 +261,8 @@ foreach(var item in list)
 						</div>
 						<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank"><i class="fa fa-github fa-5x"></i></a>
 						<div class="card-block">
-							<p class="card-text">Look at the latest release notes to know what’s new with the version you are using</p>
+							<p class="card-text">
+							Access the source of the library you're using to understand better its logic</p>
 							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank">GitHub</a>
 						</div>
 					</div>
@@ -320,7 +319,11 @@ foreach(var item in list)
     text-align: center;
   }
 }
-
+@media (max-width: 33em) {
+	.text-center-xs-down {
+		text-align: center;
+	}
+}
 /* section general */
 #top-header {
     background: -moz-linear-gradient(top, #111, #222);
@@ -352,6 +355,7 @@ header {
 	padding-bottom: 60px;
 }
 #pricing {
+	background-color: #fefefe;
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
@@ -481,9 +485,6 @@ header #carousel .highlight pre {
 
 
 /* pricing */
-#pricing h2 {
-	padding-bottom: 20px;
-}
 #pricing .table thead th {
 	text-align: center;
 }
