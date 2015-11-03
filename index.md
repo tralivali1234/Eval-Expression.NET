@@ -206,7 +206,7 @@ foreach(var item in list)
 								<option>Eval.NET $599 (4 seats)</option>
 								<option>Eval.NET $699 (5-9 seats)</option>
 								<option>Eval.NET $899 (10-14 seats)</option>
-								<option>Eval.NET $1099 (15+ seats)</option>
+								<option>Eval.NET - 15+ seats - Contact Us</option>
 							</select>
 						</fieldset>
 						<div class="checkbox">
@@ -234,10 +234,10 @@ foreach(var item in list)
 						<div class="card-block">
 							<h4 class="card-title">Documentation</h4>
 						</div>
-						<a href="/documentations/" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+						<a href="/docs/" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
 						<div class="card-block">
 							<p class="card-text">Consult and print our complete documentation to help you get started</p>
-							<a href="/documentations/" target="_blank">Documentation</a>
+							<a href="/docs/" target="_blank">Documentation</a>
 						</div>
 					</div>
 				</div>
