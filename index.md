@@ -462,7 +462,7 @@ header #carousel .highlight pre {
 	text-align: center;
 }
 #feature h3 {
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 16px;
 	text-decoration: underline;
 }
