@@ -34,7 +34,7 @@ layout: post
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="jumbotron">
-						<h1 class="display-1">Eval.NET</h1>
+						<h1 class="display-2">Eval.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
@@ -423,9 +423,12 @@ header #carousel .highlight pre {
 	border: none;
 }
 @media (max-width: 33em) {
-  header .jumbotron .lead .btn {
-    margin-bottom: 20px;
-  }
+	header .jumbotron h1.display-2{
+		font-size: 5rem;
+	}
+	header .jumbotron .lead .btn {
+		margin-bottom: 20px;
+	}
 }
 @media (max-width: 61em) {
   header #carousel {
