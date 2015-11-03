@@ -2,18 +2,6 @@
 layout: post
 ---
 
-<!--
-// Website
-	- Title
-	- Favicon
-	- More product
-	- Code (everywhere)
-	- Pricing Text
-	- Open Source Text
-	- Remove Space
-	- Padding Mobile
-	- Social Icon Color
-!-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -33,7 +21,7 @@ layout: post
 	<div id="top-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-12 text-right">
 					<a href="mailto:sales@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;sales@zzzprojects.com</a>
 					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
@@ -128,7 +116,7 @@ int result = Eval.Execute<int>("{0} + {1}", x, y)
 string s = "x + y";
 int result = s.Eval<int>(new { x = 1, y = 2 });
 {% endhighlight %}
-					<div><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
+					<div class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 				</div>
 				<div class="col-lg-6">
 					<a id="compile" href="#"></a>
@@ -148,7 +136,7 @@ foreach(var item in list)
 {
 }
 {% endhighlight %}
-					<div><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
+					<div class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 				</div>
 			</div>
 		</div>
@@ -177,7 +165,7 @@ foreach(var item in list)
 							<tr>
 								<th>Maximum Characters</th>
 								<td>50</td>
-								<td>Unlimitted</td>
+								<td>Unlimited</td>
 							</tr>
 							<tr>
 								<th>Commercial License</th>
@@ -211,7 +199,7 @@ foreach(var item in list)
 						</fieldset>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">End User License Agreement</a>.
+								<input type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">License Agreement</a>.
 							</label>
 						</div>
 						<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg" role="button"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></a>
@@ -346,13 +334,13 @@ foreach(var item in list)
 	padding-bottom: 5px;
 }
 header {
-	background: -moz-linear-gradient(top, #333, #222);
-    background: -webkit-linear-gradient(top, #333, #222);
-    background: -ms-linear-gradient(top, #333, #222);
-    background: -o-linear-gradient(top, #333, #222);
-    background: linear-gradient(top, #333, #222);
+	background: -moz-linear-gradient(top, #222, #333);
+    background: -webkit-linear-gradient(top, #222, #333);
+    background: -ms-linear-gradient(top, #222, #333);
+    background: -o-linear-gradient(top, #222, #333);
+    background: linear-gradient(top, #222, #333);
 	border-bottom: 1px solid #111;
-	border-top: 1px solid #444;
+	border-top: 1px solid #333;
 }
 #feature {
     background: -moz-linear-gradient(top, #ddd, #f2f2f2);
@@ -368,10 +356,14 @@ header {
 	padding-bottom: 60px;
 }
 #support {
-	background: #fafafa;
+	background: -moz-linear-gradient(top, #eee, #bbb);
+    background: -webkit-linear-gradient(top, #eee, #bbb);
+    background: -ms-linear-gradient(top, #eee, #bbb);
+    background: -o-linear-gradient(top, #eee, #bbb);
+    background: linear-gradient(top, #eee, #bbb);
 	padding-top: 60px;
 	padding-bottom: 60px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #aaa;
 }
 footer {
 	background: -moz-linear-gradient(top, #333, #222);
@@ -388,7 +380,6 @@ footer {
 /* top-header */
 #top-header a {
 	color: #f1f1f1;
-	font-weight: 700;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-decoration: none;
@@ -404,6 +395,9 @@ header .jumbotron {
 	color: #f1f1f1;
 	margin-bottom: 0px;
 	padding-top: 20px;
+}
+header .jumbotron hr {
+	border-color: initial;
 }
 header .jumbotron .lead .btn {
 	width: 175px;
@@ -473,6 +467,16 @@ header #carousel .highlight pre {
 	margin-top: 40px;
 }
 
+@media (min-width: 62em) {
+	#feature .row .col-lg-6:first-child {
+		padding-right: 45px;
+	}
+	#feature .row .col-lg-6:last-child {
+		padding-left: 45px;
+	}
+}
+
+
 /* pricing */
 #pricing h2 {
 	padding-bottom: 20px;
@@ -498,7 +502,7 @@ header #carousel .highlight pre {
 	padding-bottom: 20px;
 }
 #support .card {
-	border: none;
+	border: 0.0625rem solid #ccc;
 }
 #support .card-text {
 	min-height: 75px;
