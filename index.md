@@ -39,16 +39,16 @@ layout: post
 						<h1 class="display-2">Eval.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
-						<p class="lead">
+						<div class="lead">
 							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 							&nbsp;&nbsp;&nbsp;
 							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-							<p><div>* FREE up to 50 characters</div></p>
+							<p>* FREE up to 50 characters</p>
 							<p style="display: none">
 								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" alt="download nuget"><img src="https://img.shields.io/nuget/v/Z.Expressions.Eval.svg" /></a>
 								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" alt="download nuget"><img src="https://img.shields.io/nuget/dt/Z.Expressions.Eval.svg" /></a>
 							</p>							
-						</p>
+						</div>
 					</div>
 				</div>
 				<div class="col-lg-6">
