@@ -456,10 +456,13 @@ header #carousel .highlight pre {
 
 /* feature */
 #feature h2 {
+	font-size: 42px;
+	letter-spacing: 4px;
 	padding-top: 60px;
 	text-align: center;
 }
 #feature h3 {
+	letter-spacing: 2px;
 	font-size: 16px;
 	text-decoration: underline;
 }
