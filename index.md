@@ -21,9 +21,9 @@ layout: post
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Evaluate, Compile and Execute code and expression at runtime">
 		<title>Evaluate, Compile and Execute code and expression at runtime</title>
-		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="/css/github.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="/css/github.css">
 	</head>
 	<body>
   
@@ -221,7 +221,7 @@ foreach(var item in list)
 		</div>
 	</div>
 	
-	<a id="#support" href="#"></a>
+	<a id="support" href="#"></a>
 	<div id="support">
 		<div class="container">
 			<h2>Test our Outstanding Support</h2>
@@ -301,9 +301,9 @@ foreach(var item in list)
 		</div>
 	</footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script>
-	<script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
