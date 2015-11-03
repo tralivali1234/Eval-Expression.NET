@@ -7,6 +7,7 @@ layout: post
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="x-ua-compatible" content="ie=edge" />
 		<meta name="description" content="Evaluate, Compile and Execute code and expression at runtime">
+		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<title>Evaluate, Compile and Execute code and expression at runtime</title>
 		<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
