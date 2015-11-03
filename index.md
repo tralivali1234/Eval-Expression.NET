@@ -24,9 +24,7 @@ layout: post
 					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
 					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank"><i class="fa fa-newspaper-o"></i></a>
-				</div>
-				<div class="col-sm-6 text-right">
+					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
 				</div>
 			</div>
 		</div>
@@ -36,14 +34,13 @@ layout: post
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="jumbotron">
-						<h1 class="display-2">Eval.NET</h1>
+						<h1 class="display-1">Eval.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
 							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-							&nbsp;&nbsp;&nbsp;
 							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-							<p>* FREE up to 50 characters</p>
+							<p class="text-muted">* FREE up to 50 characters</p>
 							<p style="display: none">
 								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" alt="download nuget"><img src="https://img.shields.io/nuget/v/Z.Expressions.Eval.svg" /></a>
 								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" alt="download nuget"><img src="https://img.shields.io/nuget/dt/Z.Expressions.Eval.svg" /></a>
@@ -386,6 +383,7 @@ header .jumbotron {
 }
 header .jumbotron .lead .btn {
 	width: 175px;
+	margin-right: 20px;
 }
 header .jumbotron .lead .btn span {
 	display: inline-block;
@@ -393,6 +391,10 @@ header .jumbotron .lead .btn span {
 }
 header .jumbotron .lead .btn span span {
 	vertical-align : middle;
+}
+
+header .jumbotron .lead .text-muted {
+	font-size: 14px;
 }
 header #carousel {
 	background-color: #f1f1f1;
@@ -419,6 +421,11 @@ header #carousel .highlight,
 header #carousel .highlight pre {
 	background-color: transparent;
 	border: none;
+}
+@media (max-width: 33em) {
+  header .jumbotron .lead .btn {
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 61em) {
   header #carousel {
