@@ -147,8 +147,12 @@ foreach(var item in list)
 					<hr class="m-y-md" />
 					<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
 					<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval.NET the best and most robust expression evaluator for .NET language.</p>
-					<p>PRO License starts at <span class="text-bold text-green">ONLY $299</span></p>
-					<p class="text-muted">$100/Additional developer seat</p>
+					<p>
+						PRO License starting at <span class="text-bold text-green">ONLY $299</span>
+						<br />
+						<span class="text-muted">+$100/Additional developer seat</span>
+					</p>
+					
 				</div>
 				<div class="col-lg-6">
 					<table class="table table-hover table-bordered">
@@ -192,7 +196,6 @@ foreach(var item in list)
 								<option>Eval.NET $599 (4 seats)</option>
 								<option>Eval.NET $699 (5-9 seats)</option>
 								<option>Eval.NET $899 (10-14 seats)</option>
-								<option>Eval.NET $Contact us (15+ seats)</option>
 							</select>
 						</fieldset>
 						<div class="checkbox">
