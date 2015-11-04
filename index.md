@@ -59,7 +59,7 @@ layout: post
 								<div class="carousel-item-container">
 {% highlight csharp %}
 // Eval using Anonymous Type
-int result = Eval.Execute<int>("x + y", new { x = 1, y = 2})
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 
 // Eval using Member (Property, Field, Method)
 string code = "Price * Quantity";
