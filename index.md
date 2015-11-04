@@ -97,7 +97,7 @@ int result = Eval.Execute<int>(@"
 					<p>Evaluate and execute a code or an expression</p>
 					<h3>Using Class Member</h3>
 {% highlight csharp %}
-double price = Eval.Execute<double>("ItemPrice * Quantity", orderItem)
+var price = Eval.Execute("ItemPrice * Quantity", orderItem)
 {% endhighlight %}
 					<h3>Using Anonymous Class</h3>
 {% highlight csharp %}
@@ -121,15 +121,21 @@ int result = s.Eval<int>(new { X = 1, Y = 2 });
 					<p>Compile a code or an expression and return a delegate to execute</p>
 					<h3>Using custom Delegate</h3>
 {% highlight csharp %}
-Func<int> compiled = Eval.Compile<Func<int>>("x + y", new { x = 1, y = 2})
-int result = compiled(1);
+var code = "{0}.InternalProperty";
+var compiled = Eval.Compile("code", typeof(Item));
+
+foreach(var item in Items)
+{
+	var result = compiled(item);
+}
 {% endhighlight %}
 					<h3>Using Extension Methods</h3>
 {% highlight csharp %}
-string code = "x + y";
-var compiled = code.Compile<Func<int, int>>("x", "y");
-foreach(var item in list)
+string code = "{0}.InternalProperty;
+var compiled = code.Compile<Func<Item, int>>("item");
+foreach(var item in Items)
 {
+	var result = compiled(item);
 }
 {% endhighlight %}
 					<div class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
