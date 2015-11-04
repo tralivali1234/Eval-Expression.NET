@@ -52,7 +52,6 @@ layout: post
 						<ol class="carousel-indicators">
 							<li data-target="#carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel" data-slide-to="1" class=""></li>
-							<li data-target="#carousel" data-slide-to="2" class=""></li>
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
@@ -72,30 +71,13 @@ int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 // Support .NET Language
 // Support .NET Plus Language
 int result = Eval.Execute<int>(@"
-	var list = new List<int>() { 1, 2, 3, 4, 5 };
+	var list = new List<int>() { 1..5 };
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);");
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
-									<h3>...to complex code...</h3>
-								</div>
-							</div>
-							<div class="carousel-item">
-								<div class="carousel-item-container">
-{% highlight csharp %}
-// Eval
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
-
-// Compile
-var compiled = 
-	Eval.Compile<Func<int, int>>("X + Y", "X", "Y");
-
-var result = compiled(1, 2);
-{% endhighlight %}
-								</div>
-								<div class="carousel-caption">
-									<h3>...with an easy to use API!</h3>
+									<h3>To complex code.</h3>
 								</div>
 							</div>
 						</div>
