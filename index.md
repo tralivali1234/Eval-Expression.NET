@@ -338,6 +338,9 @@ foreach(var item in list)
 .text-green {
 	color: rgb(68, 157, 68);
 }
+.highlight * {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
 @media (max-width: 61em) {
   .text-center-md-down {
     text-align: center;
@@ -467,7 +470,6 @@ header #carousel .highlight,
 header #carousel .highlight pre {
 	background-color: transparent;
 	border: none;
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
 @media (max-width: 33em) {
 	header .jumbotron h1.display-2{
