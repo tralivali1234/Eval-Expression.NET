@@ -58,7 +58,12 @@ layout: post
 							<div class="carousel-item active">
 								<div class="carousel-item-container">
 {% highlight csharp %}
+// Eval from Anonymous Type
 int result = Eval.Execute<int>("x + y", new { x = 1, y = 2})
+
+// Eval from Member (Property, Field, Method)
+string code = "Quantity * GetUnitPrice()";
+double price = Eval.Execute<double>(code, item);
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
