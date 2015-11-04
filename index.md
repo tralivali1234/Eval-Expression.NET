@@ -1,6 +1,7 @@
 ---
 layout: post
 ---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -58,9 +59,9 @@ layout: post
 								<div class="carousel-item-container">
 {% highlight csharp %}
 // Eval using Anonymous Type
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
+int result = Eval.Execute<int>("x + y", new { x = 1, y = 2})
 
-// Eval using Class Member (Property, Field, Method)
+// Eval using Member (Property, Field, Method)
 string code = "Price * Quantity";
 double total = Eval.Execute<double>(code, orderItem);
 {% endhighlight %}
@@ -72,12 +73,14 @@ double total = Eval.Execute<double>(code, orderItem);
 							<div class="carousel-item">
 								<div class="carousel-item-container">
 {% highlight csharp %}
-// Support .NET Language
-// Support .NET Plus Language
+// Support Genertic Type
+// Support Extension Methods
+// Support Lambda Expressions
 int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1, 2, 3, 4, 5 };
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);
+");
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
@@ -88,11 +91,15 @@ int result = Eval.Execute<int>(@"
 								<div class="carousel-item-container">
 {% highlight csharp %}
 // Eval
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
+object result1 = Eval.Execute("x + y", new { x = 1, y = 2 });
+int result2 = Eval.Execute<int>("x + y", new { x = 1, y = 2 });
 
 // Compile
-var compiled = Eval.Compile<Func<int, int, int>>("x + y", "x", "y");
-var result = compiled(1, 2);
+Func<int, int, int> compiled1 = Eval.Compile("{0} + {1}", typeof(int), typeof(int));
+var result3 = compiled1(1, 2)
+
+Func<int, int, int> compiled2 = Eval.Compile<Func<int, int, int>>("x + y", "x", "y");
+var result4 = compiled2(1, 2);
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
@@ -325,9 +332,6 @@ foreach(var item in list)
 * {
 	 font-family: "Bitter",Georgia,"Times New Roman",serif;
 }
-.highlight * {
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-}
 .text-bold {
 	font-weight: 700;
 }
@@ -459,10 +463,11 @@ header .carousel-indicators li {
 header .carousel-indicators .active {
 	background-color: #000;
 }
-header #carousel ,
+header #carousel .highlight,
 header #carousel .highlight pre {
 	background-color: transparent;
 	border: none;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
 @media (max-width: 33em) {
 	header .jumbotron h1.display-2{
