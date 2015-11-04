@@ -6,23 +6,8 @@ General
 	- Add favicon ({})
 	- Review all link
 
-Header
-	- Review button spacing (on different size)
-	
-FEATURE
-	- Header more in evidence?
-	- Evaluate and execute a code or an expression.
-	- Button Horizontal Align Equal
-	- Padding (Top | Bottom) on code
-	
 Pricing
-	-trop d'espace entre "pro license starts at only 299" et 100/additional developer seat
-	-15+ seat, maybe just don't write a price and add logic for a message to appear to contact us when selected?
 	- Add logic - agreeing to license agreement
-	- Add logic - 15+ seat
-	
-Support
-	- Open Source Text
 !-->
 <html lang="en">
 	<head>
@@ -218,25 +203,28 @@ foreach(var item in Items)
 						</tbody>
 					</table>
 					
-					<form>
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="return validate()">
+						<input type="hidden" name="cmd" value="_s-xclick">
+						<input type="hidden" name="hosted_button_id" value="PW79CTHBQFBZC">
+						<input type="hidden" name="currency_code" value="USD">
 						<fieldset class="form-group">
-							<select class="form-control" id="exampleSelect1">
-								<option>Eval.NET $299 (1 seat)</option>
-								<option>Eval.NET $399 (2 seats)</option>
-								<option>Eval.NET $499 (3 seats)</option>
-								<option>Eval.NET $599 (4 seats)</option>
-								<option>Eval.NET $699 (5-9 seats)</option>
-								<option>Eval.NET $899 (10-14 seats)</option>
-							</select>
+							<input type="hidden" name="on0" value="Seats">
+							<select name="os0" class="form-control">
+								<option value="1 seat">Eval.NET $299 (1 seat)</option>
+								<option value="2 seats">Eval.NET $399 (2 seats)</option>
+								<option value="3 seats">Eval.NET $499 (3 seats)</option>
+								<option value="4 seats">Eval.NET $599 (4 seats)</option>
+								<option value="5-9 seats">Eval.NET $699 (5-9 seats)</option>
+								<option value="10-15 seats">Eval.NET $899 (10-15 seats)</option>
+							</select> 
 						</fieldset>
 						<div class="checkbox">
 							<label>
-								<input type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">License Agreement</a>.
+								<input id="agree_agreement" type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">License Agreement</a>.
 							</label>
 						</div>
-						<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg" role="button"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></a>
-					</form>
-					
+						<button type="submit"  class="btn btn-success btn-lg" ><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></a>
+					</form>					
 				</div>
 			</div>
 		</div>
@@ -349,6 +337,26 @@ foreach(var item in Items)
 			</div>
 		</div>
 	</footer>
+	
+	<div class="modal fade" id="error_validation" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+					</button>
+				<h4 class="modal-title" id="myModalLabel">License Agreement</h4>
+				</div>
+				<div class="modal-body bg-danger">
+					You must read and agree the License Agreement.
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script>
@@ -360,6 +368,15 @@ foreach(var item in Items)
 
 	  ga('create', 'UA-55584370-3', 'auto');
 	  ga('send', 'pageview');
+	  
+	  function validate() {
+		if($("#agree_agreement").prop('checked')) {
+			return true;
+		}
+		
+		$("#error_validation").modal('show')
+		return false;
+	  }
 	</script>
   </body>
 </html>
