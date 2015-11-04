@@ -554,7 +554,7 @@ header #carousel .highlight pre {
 	text-decoration: underline;
 }
 #feature .block-code {
-	min-height: 500px;
+	min-height: 550px;
 }
 #feature .btn {
 	margin-top: 40px;
