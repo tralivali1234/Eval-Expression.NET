@@ -133,6 +133,7 @@ foreach(var item in Items)
 {% highlight csharp %}
 string code = "{0}.InternalProperty;
 var compiled = code.Compile<Func<Item, int>>("item");
+
 foreach(var item in Items)
 {
 	var result = compiled(item);
