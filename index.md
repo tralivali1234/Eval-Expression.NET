@@ -1,7 +1,6 @@
 ---
 layout: post
 ---
-
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -79,7 +78,6 @@ int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1, 2, 3, 4, 5 };
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);
-");
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
@@ -327,14 +325,14 @@ foreach(var item in list)
 * {
 	 font-family: "Bitter",Georgia,"Times New Roman",serif;
 }
+.highlight * {
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
 .text-bold {
 	font-weight: 700;
 }
 .text-green {
 	color: rgb(68, 157, 68);
-}
-.highlight * {
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 @media (max-width: 61em) {
   .text-center-md-down {
