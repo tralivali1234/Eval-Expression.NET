@@ -95,18 +95,22 @@ int result = Eval.Execute<int>(@"
 					<h2>Eval.Execute</h2>
 					<hr class="m-y-md" />
 					<p>Evaluate and execute a code or an expression</p>
+					<h3>Using Class Member</h3>
+{% highlight csharp %}
+double price = Eval.Execute<double>("ItemPrice * Quantity", orderItem)
+{% endhighlight %}
 					<h3>Using Anonymous Class</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("x + y", new { x = 1, y = 2})
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 {% endhighlight %}
-					<h3>Using Ordinal Position</h3>
+					<h3>Using Argument Position</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("{0} + {1}", x, y)
+int result = Eval.Execute<int>("{0} + {1}", 1, 2)
 {% endhighlight %}
 					<h3>Using Extension Methods</h3>
 {% highlight csharp %}
-string s = "x + y";
-int result = s.Eval<int>(new { x = 1, y = 2 });
+string s = "X + Y";
+int result = s.Eval<int>(new { X = 1, Y = 2 });
 {% endhighlight %}
 					<div class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 				</div>
