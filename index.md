@@ -223,7 +223,7 @@ foreach(var item in Items)
 								<input id="agree_agreement" type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">License Agreement</a>.
 							</label>
 						</div>
-						<button type="submit"  class="btn btn-success btn-lg" ><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></a>
+						<button type="submit"  class="btn btn-success btn-lg" ><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
 					</form>					
 				</div>
 			</div>
