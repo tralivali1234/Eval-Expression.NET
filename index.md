@@ -48,7 +48,7 @@ layout: post
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+					<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
 						<ol class="carousel-indicators">
 							<li data-target="#carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel" data-slide-to="1" class=""></li>
@@ -90,7 +90,16 @@ int result = Eval.Execute<int>(@"
 							<div class="carousel-item">
 								<div class="carousel-item-container">
 {% highlight csharp %}
-int result = Eval.Execute<int>(@"x + y", new { x = 1, y = 2})
+// Eval
+object result1 = Eval.Execute("x + y", new { x = 1, y = 2 });
+int result2 = Eval.Execute<int>("x + y", new { x = 1, y = 2 });
+
+// Compile
+Func<int, int, int> compiled1 = Eval.Compile("{0} + {1}", typeof(int), typeof(int));
+var result3 = compiled1(1, 2)
+
+Func<int, int, int> compiled2 = Eval.Compile<Func<int, int, int>>("x + y", "x", "y");
+var result4 = compiled2(1, 2);
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
