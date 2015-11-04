@@ -1,7 +1,29 @@
 ---
 layout: post
 ---
+<!--
+General
+	- Add favicon ({})
+	- Review all link
 
+Header
+	- Review button spacing (on different size)
+	
+FEATURE
+	- Header more in evidence?
+	- Evaluate and execute a code or an expression.
+	- Button Horizontal Align Equal
+	- Padding (Top | Bottom) on code
+	
+Pricing
+	-trop d'espace entre "pro license starts at only 299" et 100/additional developer seat
+	-15+ seat, maybe just don't write a price and add logic for a message to appear to contact us when selected?
+	- Add logic - agreeing to license agreement
+	- Add logic - 15+ seat
+	
+Support
+	- Open Source Text
+!-->
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -39,10 +61,9 @@ layout: post
 						<h1 class="display-3">Eval.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
-						<div class="lead text-center-xs-down">
-							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" class="btn btn-primary btn-lg" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-							<p />
+						<div class="lead">
+							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
 							<p class="text-muted">* FREE Version - up to 50 characters</p>						
 						</div>
 					</div>
@@ -284,6 +305,33 @@ foreach(var item in Items)
 		</div>
 	</div>
 	
+	<div id="product">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3">
+					<div class="product-section">Bulk Operations</div>
+					<ul>
+						<li><a href="#" target="_blank">.NET Entity Framework Plus</a></li>
+						<li><a href="#" target="_blank">.NET Bulk Operations</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<div class="product-section">Expression Evaluation</div>
+					<ul>
+						<li><a href="#" target="_blank">Eval.NET</a></li>
+						<li><a href="#" target="_blank">Eval SQL.NET</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<div class="product-section">Library</div>
+					<ul>
+						<li><a href="#" target="_blank">Extension Methods</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>		
+	</div>
+	
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -292,7 +340,7 @@ foreach(var item in Items)
 					<div class="hidden-lg-up"></div>All rights reserved
 				</div>
 				<hr class="hidden-lg-up" />
-				<div class="col-lg-6 text-right text-center-md-down social">
+				<div class="col-lg-6 text-center-md-down text-right-lg-up social">
 					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
 					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
@@ -331,13 +379,18 @@ foreach(var item in Items)
 	color: rgb(68, 157, 68);
 }
 @media (max-width: 61em) {
-  .text-center-md-down {
-    text-align: center;
-  }
+	.text-center-md-down {
+		text-align: center;
+	}
 }
 @media (max-width: 33em) {
 	.text-center-xs-down {
 		text-align: center;
+	}
+}
+@media (min-width: 62em) {
+	.text-right-lg-up {
+		text-align: right;
 	}
 }
 /* section general */
@@ -385,6 +438,18 @@ header {
 	padding-bottom: 60px;
 	border-bottom: 1px solid #aaa;
 }
+#product {
+    background: -moz-linear-gradient(top, #111, #222);
+    background: -webkit-linear-gradient(top, #111, #222);
+    background: -ms-linear-gradient(top, #111, #222);
+    background: -o-linear-gradient(top, #111, #222);
+    background: linear-gradient(top, #111, #222);
+	border-bottom: 1px solid #111;
+	border-top: 1px solid #333;
+	color: #f1f1f1;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
 footer {
 	background: -moz-linear-gradient(top, #333, #222);
     background: -webkit-linear-gradient(top, #333, #222);
@@ -421,6 +486,8 @@ header .jumbotron hr {
 }
 header .jumbotron .lead .btn {
 	width: 175px;
+}
+header .jumbotron .lead .btn-left {
 	margin-right: 20px;
 }
 header .jumbotron .lead .btn span {
@@ -430,9 +497,9 @@ header .jumbotron .lead .btn span {
 header .jumbotron .lead .btn span span {
 	vertical-align : middle;
 }
-
 header .jumbotron .lead .text-muted {
 	font-size: 14px;
+	padding-top: 10px;
 }
 header #carousel {
 	background-color: #f1f1f1;
@@ -535,7 +602,32 @@ header #carousel .highlight pre {
 	padding-bottom: 20px;
 }
 
+/* product */
+#product .product-section {
+	letter-spacing: 1px;
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+#product ul {
+	list-style: none;
+	padding-left: 0px;
+}
+#product a {
+	color: #999;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+#product a:hover {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
 /* footer */
+footer hr {
+	border-color: #666;
+	margin-left: 20px;
+	margin-right: 20px;
+}
 footer a {
 	color: #666;
 	text-decoration: none;
