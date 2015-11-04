@@ -97,22 +97,22 @@ int result = Eval.Execute<int>(@"
 					<div class="block-code">
 						<p>Evaluate and execute a code or an expression</p>
 						<h3>Using Class Member</h3>
-	{% highlight csharp %}
-	var price = Eval.Execute("ItemPrice * Quantity", orderItem)
-	{% endhighlight %}
+{% highlight csharp %}
+var price = Eval.Execute("ItemPrice * Quantity", orderItem)
+{% endhighlight %}
 						<h3>Using Anonymous Class</h3>
-	{% highlight csharp %}
-	int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
-	{% endhighlight %}
+{% highlight csharp %}
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
+{% endhighlight %}
 						<h3>Using Argument Position</h3>
-	{% highlight csharp %}
-	int result = Eval.Execute<int>("{0} + {1}", 1, 2)
-	{% endhighlight %}
+{% highlight csharp %}
+int result = Eval.Execute<int>("{0} + {1}", 1, 2)
+{% endhighlight %}
 						<h3>Using Extension Methods</h3>
-	{% highlight csharp %}
-	string s = "X + Y";
-	int result = s.Eval<int>(new { X = 1, Y = 2 });
-	{% endhighlight %}
+{% highlight csharp %}
+string s = "X + Y";
+int result = s.Eval<int>(new { X = 1, Y = 2 });
+{% endhighlight %}
 					</div>
 					<div class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 				</div>
@@ -123,25 +123,25 @@ int result = Eval.Execute<int>(@"
 					<div class="block-code">
 						<p>Compile a code or an expression and return a delegate to execute</p>
 						<h3>Using custom Delegate</h3>
-	{% highlight csharp %}
-	var code = "{0}.InternalProperty";
-	var compiled = Eval.Compile<Func<int, int>>("code");
+{% highlight csharp %}
+var code = "{0}.InternalProperty";
+var compiled = Eval.Compile<Func<int, int>>("code");
 
-	foreach(var item in Items)
-	{
-		int result = compiled(item);
-	}
-	{% endhighlight %}
+foreach(var item in Items)
+{
+	int result = compiled(item);
+}
+{% endhighlight %}
 						<h3>Using Extension Methods</h3>
-	{% highlight csharp %}
-	string code = "{0}.InternalProperty;
-	var compiled = code.Compile("item", typeof(Item));
+{% highlight csharp %}
+string code = "{0}.InternalProperty;
+var compiled = code.Compile("item", typeof(Item));
 
-	foreach(var item in Items)
-	{
-		var result = compiled(item);
-	}
-	{% endhighlight %}
+foreach(var item in Items)
+{
+	var result = compiled(item);
+}
+{% endhighlight %}
 					</div>
 					<div class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 				</div>
