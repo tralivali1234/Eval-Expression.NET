@@ -74,7 +74,7 @@ int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1, 2, 3, 4, 5 };
 	var filter = list.Where(x => x < 3);
-return result.Sum(x => x);
+	return result.Sum(x => x);");
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
@@ -88,7 +88,9 @@ return result.Sum(x => x);
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 
 // Compile
-var compiled = Eval.Compile<Func<int, int, int>>("x + y", "x", "y");
+var compiled = 
+	Eval.Compile<Func<int, int>>("X + Y", "X", "Y");
+
 var result = compiled(1, 2);
 {% endhighlight %}
 								</div>
