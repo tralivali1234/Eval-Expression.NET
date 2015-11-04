@@ -61,7 +61,7 @@ layout: post
 // Eval using Anonymous Type
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 
-// Eval using Member (Property, Field, Method)
+// Eval using Class Member (Property, Field, Method)
 string code = "Price * Quantity";
 double total = Eval.Execute<double>(code, orderItem);
 {% endhighlight %}
@@ -73,9 +73,8 @@ double total = Eval.Execute<double>(code, orderItem);
 							<div class="carousel-item">
 								<div class="carousel-item-container">
 {% highlight csharp %}
-// Support Genertic Type
-// Support Extension Methods
-// Support Lambda Expressions
+// Support .NET Language
+// Support .NET Plus Language
 int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1, 2, 3, 4, 5 };
 	var filter = list.Where(x => x < 3);
@@ -91,15 +90,11 @@ int result = Eval.Execute<int>(@"
 								<div class="carousel-item-container">
 {% highlight csharp %}
 // Eval
-object result1 = Eval.Execute("x + y", new { x = 1, y = 2 });
-int result2 = Eval.Execute<int>("x + y", new { x = 1, y = 2 });
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 
 // Compile
-Func<int, int, int> compiled1 = Eval.Compile("{0} + {1}", typeof(int), typeof(int));
-var result3 = compiled1(1, 2)
-
-Func<int, int, int> compiled2 = Eval.Compile<Func<int, int, int>>("x + y", "x", "y");
-var result4 = compiled2(1, 2);
+var compiled = Eval.Compile<Func<int, int, int>>("x + y", "x", "y");
+var result = compiled(1, 2);
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
@@ -466,7 +461,7 @@ header .carousel-indicators li {
 header .carousel-indicators .active {
 	background-color: #000;
 }
-header #carousel .highlight,
+header #carousel ,
 header #carousel .highlight pre {
 	background-color: transparent;
 	border: none;
