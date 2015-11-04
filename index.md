@@ -73,7 +73,14 @@ double price = Eval.Execute<double>(code, item);
 							<div class="carousel-item">
 								<div class="carousel-item-container">
 {% highlight csharp %}
-int result = Eval.Execute<int>(@"x + y", new { x = 1, y = 2})
+// Support Genertic Type
+// Support Extension Methods
+// Support Lambda Expressions
+int result = Eval.Execute<int>(@"
+	var list = new List<int>() { 1, 2, 3, 4, 5 };
+	var filter = list.Where(x => x < 3);
+	return result.Sum(x => x);
+");
 {% endhighlight %}
 								</div>
 								<div class="carousel-caption">
