@@ -467,7 +467,7 @@ header #carousel .highlight,
 header #carousel .highlight pre {
 	background-color: transparent;
 	border: none;
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
 }
 @media (max-width: 33em) {
 	header .jumbotron h1.display-2{
