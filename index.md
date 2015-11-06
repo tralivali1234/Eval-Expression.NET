@@ -11,7 +11,6 @@ Feature
 	- Button too away
 	- Test link more docs
 
-Ajouter une simple expression example?? Fait tres vide
 !-->
 <html lang="en">
 	<head>
@@ -530,7 +529,7 @@ header #carousel {
 	margin-bottom: 64px;
 }
 header .carousel-item {
-	height:275px;
+	height:300px;
 	vertical-align: middle;
 }
 header .carousel-caption,
@@ -576,7 +575,7 @@ header #carousel .highlight pre {
 	text-decoration: underline;
 }
 #feature .block-code {
-	min-height: 550px;
+	min-height: 500px;
 }
 #feature .btn {
 	margin-top: 40px;
