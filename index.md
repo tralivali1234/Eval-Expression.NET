@@ -530,7 +530,7 @@ header #carousel {
 	margin-bottom: 64px;
 }
 header .carousel-item {
-	height:300px;
+	height:275px;
 	vertical-align: middle;
 }
 header .carousel-caption,
