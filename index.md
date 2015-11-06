@@ -8,8 +8,6 @@ General
 	
 Feature
 	- Review Section Header
-	- Button too away
-	- Test link more docs
 
 !-->
 <html lang="en">
@@ -46,7 +44,7 @@ Feature
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="jumbotron">
-						<h1 class="display-3">Eval.NET</h1>
+						<h1>Eval Expression.NET</h1>
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
@@ -500,6 +498,12 @@ header .jumbotron {
 	color: #f1f1f1;
 	margin-bottom: 0px;
 	padding-top: 20px;
+}
+header .jumbotron h1 {
+	font-size: 3.0rem;
+}
+header .jumbotron h3 {
+	font-size: 1.3rem;
 }
 header .jumbotron hr {
 	border-color: initial;
