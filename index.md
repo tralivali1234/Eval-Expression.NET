@@ -5,9 +5,13 @@ layout: post
 General
 	- Add favicon ({})
 	- Review all link
+	
+Feature
+	- Review Section Header
+	- Button too away
+	- Test link more docs
 
-Pricing
-	- Add logic - agreeing to license agreement
+Ajouter une simple expression example?? Fait tres vide
 !-->
 <html lang="en">
 	<head>
@@ -47,8 +51,8 @@ Pricing
 						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
-							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
+							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
 							<p class="text-muted">* FREE Version - up to 50 characters</p>						
 						</div>
 					</div>
@@ -63,6 +67,9 @@ Pricing
 							<div class="carousel-item active">
 								<div class="carousel-item-container">
 {% highlight csharp %}
+// Eval using Class Member
+var price = Eval.Execute("ItemPrice * Quantity", orderItem)
+
 // Eval using Anonymous Type
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 {% endhighlight %}
@@ -345,7 +352,7 @@ foreach(var item in Items)
 					<h4 class="modal-title" id="myModalLabel">License Agreement</h4>
 				</div>
 				<div class="modal-body bg-danger">
-					You must read and agree the License Agreement.
+					You must read and agree to the License Agreement.
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -523,6 +530,7 @@ header #carousel {
 }
 header .carousel-item {
 	height:300px;
+	vertical-align: middle;
 }
 header .carousel-caption,
 header .carousel-control {
