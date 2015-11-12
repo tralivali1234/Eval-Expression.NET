@@ -45,7 +45,7 @@ Feature
 				<div class="col-lg-6">
 					<div class="jumbotron">
 						<h1>Eval Expression.NET</h1>
-						<h3>Evaluate, Compile and Execute code and expression at runtime</h3>
+						<h3>Evaluate, Compile and Execute code and expression in .NET at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
 							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
