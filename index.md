@@ -125,7 +125,7 @@ string s = "X + Y";
 int result = s.Eval<int>(new { X = 1, Y = 2 });
 {% endhighlight %}
 					</div>
-					<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Compile" target="_blank" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
+					<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Execute" target="_blank" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 				</div>
 				<div class="col-lg-6">
 					<a id="compile" href="#"></a>
