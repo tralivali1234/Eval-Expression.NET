@@ -7,9 +7,9 @@ layout: post
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<meta name="description" content="Evaluate, Compile and Execute code and expression at runtime">
-		<meta name="keywords" content="NET, CSharp, VB, Eval, Evaluate, Compile, Execute">
-		<title>Evaluate, Compile and Execute code and expression at runtime</title>
+		<meta name="description" content="Evaluate, Compile and Execute C# code and expression at runtime">
+		<meta name="keywords" content=".NET, dotnet, C#, CSharp, VB, Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime">
+		<title>Evaluate, Compile and Execute C# code and expression at runtime</title>
 		<link rel="icon" type="image/png" href="http://eval-expression.net/images/logo.png">
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -38,7 +38,7 @@ layout: post
 				<div class="col-lg-6">
 					<div class="jumbotron">
 						<h1>Eval Expression.NET</h1>
-						<h3>Evaluate, Compile and Execute code and expression in .NET at runtime</h3>
+						<h3>Evaluate, Compile and Execute C# code and expression at runtime</h3>
 						<hr class="m-y-md" />
 						<div class="lead">
 							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
