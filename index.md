@@ -105,7 +105,7 @@ int result = Eval.Execute<int>("X + Y", expandoObject);
 {% endhighlight %}
 							<h3>Dictionary Key</h3>
 {% highlight csharp %}
-var values = new Dictionary<string, object>() {{"X", 1}, {"Y", 2}};
+var values = new Dictionary<string, object>() { {"X", 1}, {"Y", 2} };
 int result = Eval.Execute<int>("X + Y", values);
 {% endhighlight %}
 							<h3>Argument Position</h3>
@@ -308,7 +308,7 @@ int result = compiled(1, 2);
 						</ul>
 					</div>
 					<div class="col-lg-3">
-						<div class="product-section">Expression Evaluation</div>
+						<div class="product-section">Expression Evaluator</div>
 						<ul>
 							<li><a href="#" target="_blank">Eval.NET</a></li>
 							<li><a href="#" target="_blank">Eval SQL.NET</a></li>
