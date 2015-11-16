@@ -521,9 +521,8 @@ header .card .card-code {
 	min-height: 350px;
 }
 
-
-header #carousel .highlight,
-header #carousel .highlight pre {
+header .card .card-code .highlight,
+header .card .card-code .highlight pre {
 	background-color: transparent;
 	border: none;
 }
