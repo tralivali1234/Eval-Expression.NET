@@ -24,14 +24,12 @@ layout: post
 		<!-- top-header !-->
 		<div id="top-header">
 			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 text-right">
-						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;sales@zzzprojects.com</a>
-						<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
-						<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-						<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-						<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
-					</div>
+				<div class="text-right">
+					<a href="mailto:sales@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp;sales@zzzprojects.com</a>
+					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
 				</div>
 			</div>
 		</div>
@@ -477,7 +475,7 @@ footer {
 
 /* top-header */
 #top-header a {
-	color: #f1f1f1;
+	color: #fefefe;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-decoration: none;
