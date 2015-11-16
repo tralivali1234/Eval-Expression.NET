@@ -288,31 +288,30 @@ foreach(var item in Items)
 			</div>
 		</div>
 		
-		<!-- anchor !-->
-		<a id="product" href="#"></a>
 		
 		<!-- other product !-->
 		<div id="product">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3">
-						<div class="product-section">Bulk Operations</div>
+						<h3>Bulk Operations</h3>
 						<ul>
 							<li><a href="http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/" target="_blank">.NET Entity Framework Plus</a></li>
 							<li><a href="http://www.zzzprojects.com/products/dotnet-development/bulk-operations/" target="_blank">.NET Bulk Operations</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
-						<div class="product-section">Expression Evaluator</div>
+						<h3>Expression Evaluator</h3>
 						<ul>
-							<li><a href="http://eval-expression.net/" target="_blank">Eval.NET</a></li>
+							<li><a href="http://eval-expression.net/" target="_blank">Eval Expression.NET</a></li>
 							<li><a href="http://eval-sql.net/" target="_blank">Eval SQL.NET</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
-						<div class="product-section">Library</div>
+						<h3>Others</h3>
 						<ul>
 							<li><a href="http://www.zzzprojects.com/products/dotnet-development/extension-methods/" target="_blank">Extension Methods</a></li>
+							<li><a href="http://compiler-expression.net/" target="_blank">Compiler Expression.NET</a></li>
 						</ul>
 					</div>
 				</div>
@@ -458,9 +457,8 @@ header {
     background: linear-gradient(top, #111, #222);
 	border-bottom: 1px solid #111;
 	border-top: 1px solid #333;
-	color: #f1f1f1;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	color: #fefefe;
+	padding: 20px 0px;
 }
 footer {
 	background: -moz-linear-gradient(top, #333, #222);
@@ -609,10 +607,10 @@ header .card .card-code .highlight pre {
 }
 
 /* product */
-#product .product-section {
+#product h3 {
 	letter-spacing: 1px;
-	font-weight: bold;
-	padding-bottom: 5px;
+	font-size: 18px;
+	font-weight: 700;
 }
 #product ul {
 	list-style: none;
@@ -624,8 +622,10 @@ header .card .card-code .highlight pre {
 	letter-spacing: 1px;
 }
 #product a:hover {
-	color: #f1f1f1;
+	color: #fefefe;
+	opacity: 0.9;
 	text-decoration: none;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 /* footer */
