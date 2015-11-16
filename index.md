@@ -46,6 +46,7 @@ layout: post
 								<h1 class="card-title">Eval Expression.NET</h1>
 								<h3>Evaluate, Compile and Execute C# code and expression at runtime</h3>
 							</div>
+							<hr class="m-y-md" />
 							<div class="card-block lead">
 								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 								<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
@@ -54,26 +55,16 @@ layout: post
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">From simple C# expression...</h4>
 {% highlight csharp %}
-// Eval using Anonymous Type
+// From simple expression...
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
-{% endhighlight %}
-							</div>
-							<div class="card-block">
-								<h4 class="card-title">To complex code.</h4>
-{% highlight csharp %}
-// Support .NET Language
-// Support .NET Plus Language
+
+// To complex code.
 int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1..100 };
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);");
-{% endhighlight %}
-							</div>						
-						</div>
+{% endhighlight %}					
 					</div>
 				</div>
 			</div>
@@ -92,24 +83,23 @@ int result = Eval.Execute<int>(@"
 						<hr class="m-y-md" />
 						<div class="block-code">
 							<p>Evaluate and execute the code or expression.</p>
-							<h3>Anonymous Type</h3>
 {% highlight csharp %}
+// Anonymous Type
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
-{% endhighlight %}
-							<h3>Class Member</h3>
-{% highlight csharp %}
+
+// Class Member
 dynamic expandoObject = new ExpandoObject();
 expandoObject.X = 1;
 expandoObject.Y = 2;
 int result = Eval.Execute<int>("X + Y", expandoObject);
-{% endhighlight %}
-							<h3>Dictionary Key</h3>
-{% highlight csharp %}
-var values = new Dictionary<string, object>() { {"X", 1}, {"Y", 2} };
+
+// Dictionary Key
+var values = new Dictionary<string, object>() { 
+	{"X", 1}, {"Y", 2} 
+};
 int result = Eval.Execute<int>("X + Y", values);
-{% endhighlight %}
-							<h3>Argument Position</h3>
-{% highlight csharp %}
+
+// Argument Position
 int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 {% endhighlight %}
 						</div>
@@ -121,8 +111,8 @@ int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 						<hr class="m-y-md" />
 						<div class="block-code">
 							<p>Compile the code or expression and return a delegate.</p>
-							<h3>Delegate Func</h3>
 {% highlight csharp %}
+// Delegate Func
 var compiled = Eval.Compile<Func<int, int, int>>("{0} + {1}");
 int result = compiled(1, 2);
 
@@ -130,14 +120,12 @@ foreach(var item in Items)
 {
 	int result = compiled(item);
 }
-{% endhighlight %}
-							<h3>Delegate Action</h3>
-{% highlight csharp %}
+
+// Delegate Action
 var compiled = Eval.Compile<Action<int, int>>("{0} + {1}");
 compiled(1, 2);
-{% endhighlight %}
-							<h3>Named Parameter</h3>
-{% highlight csharp %}
+
+// Named Parameter
 var compiled = Eval.Compile<Func<int, int, int>>("X + Y", "X", "Y");
 int result = compiled(1, 2);
 {% endhighlight %}
