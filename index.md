@@ -66,7 +66,12 @@ int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1..100 };
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);");
-{% endhighlight %}		
+	
+// Support full C# Syntax including:
+// - Extension Methods
+// - Anonymous Type
+// - Generic Type
+{% endhighlight %}	
 							</div>
 						</div>
 					</div>
@@ -234,10 +239,10 @@ foreach(var item in Items)
 							<div class="card-block">
 								<h4 class="card-title">Documentation</h4>
 							</div>
-							<a href="/docs/" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Consult our complete documentation to help you get started</p>
-								<a href="/docs/" target="_blank">Documentation</a>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank">Documentation</a>
 							</div>
 						</div>
 					</div>
@@ -295,21 +300,21 @@ foreach(var item in Items)
 					<div class="col-lg-3">
 						<div class="product-section">Bulk Operations</div>
 						<ul>
-							<li><a href="#" target="_blank">.NET Entity Framework Plus</a></li>
-							<li><a href="#" target="_blank">.NET Bulk Operations</a></li>
+							<li><a href="http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/" target="_blank">.NET Entity Framework Plus</a></li>
+							<li><a href="http://www.zzzprojects.com/products/dotnet-development/bulk-operations/" target="_blank">.NET Bulk Operations</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
 						<div class="product-section">Expression Evaluator</div>
 						<ul>
-							<li><a href="#" target="_blank">Eval.NET</a></li>
-							<li><a href="#" target="_blank">Eval SQL.NET</a></li>
+							<li><a href="http://eval-expression.net/" target="_blank">Eval.NET</a></li>
+							<li><a href="http://eval-sql.net/" target="_blank">Eval SQL.NET</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
 						<div class="product-section">Library</div>
 						<ul>
-							<li><a href="#" target="_blank">Extension Methods</a></li>
+							<li><a href="http://www.zzzprojects.com/products/dotnet-development/extension-methods/" target="_blank">Extension Methods</a></li>
 						</ul>
 					</div>
 				</div>
