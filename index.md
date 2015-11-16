@@ -221,15 +221,12 @@ foreach(var item in Items)
 				</div>
 			</div>
 		</div>
-		
-		<!-- anchor !-->
-		<a id="support" href="#"></a>
-		
+
 		<!-- support !-->
 		<div id="support">
 			<div class="container">
 				<h2>Test our Outstanding Support</h2>
-				<p>We usually answer within the next business day, hour, or minutes!</p>
+				<h3>We usually answer within the next business day, hour, or minutes!</h3>
 				<div class="row">
 					<hr class="hidden-sm-up" />
 					<div class="col-sm-6 col-lg-3">
@@ -239,7 +236,7 @@ foreach(var item in Items)
 							</div>
 							<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
-								<p class="card-text">Consult our complete documentation to help you get started</p>
+								<p class="card-text">Consult our complete documentation to help you getting started.</p>
 								<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank">Documentation</a>
 							</div>
 						</div>
@@ -263,9 +260,9 @@ foreach(var item in Items)
 							<div class="card-block">
 								<h4 class="card-title">Forum</h4>
 							</div>
-							<a href="mailto:sales@zzzprojects.com"><i class="fa fa-weixin fa-5x"></i></a>
+							<a href="https://zzzprojects.uservoice.com/forums/327759-eval-expression-net" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
-								<p class="card-text">Visit the forum to propose new features or to discuss about the library</p>
+								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
 								<a href="https://zzzprojects.uservoice.com/forums/327759-eval-expression-net" target="_blank">Forum</a>
 							</div>
 						</div>
@@ -279,7 +276,7 @@ foreach(var item in Items)
 							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank"><i class="fa fa-github fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">
-								Access the source of the library you're using to understand better its logic</p>
+								Access the source of the library you're using to understand better its logic.</p>
 								<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank">GitHub</a>
 							</div>
 						</div>
@@ -448,6 +445,7 @@ header {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	border-bottom: 1px solid #aaa;
+	border-top: 1px solid #ccc;
 }
 #product {
     background: -moz-linear-gradient(top, #111, #222);
@@ -594,6 +592,10 @@ header .card .card-code .highlight pre {
 }
 #support h2 {
 	padding-bottom: 20px;
+}
+#support h3 {
+	font-size: 20px;
+	padding-bottom: 40px;
 }
 #support .card {
 	border: 0.0625rem solid #ccc;
