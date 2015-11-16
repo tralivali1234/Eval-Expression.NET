@@ -15,62 +15,55 @@ layout: post
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/github.css">
 	</head>
+	
 	<body>
-  
-	<a id="download" href="#"></a>
-	<a id="github" href="#"></a>
-	<div id="top-header">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-right">
-					<a href="mailto:sales@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;sales@zzzprojects.com</a>
-					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
-					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
+		<!-- anchor !-->
+		<a id="download" href="#"></a>
+		<a id="github" href="#"></a>
+		
+		<!-- top-header !-->
+		<div id="top-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 text-right">
+						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;sales@zzzprojects.com</a>
+						<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<header>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="jumbotron">
-						<h1>Eval Expression.NET</h1>
-						<h3>Evaluate, Compile and Execute C# code and expression at runtime</h3>
-						<hr class="m-y-md" />
-						<div class="lead">
-							<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-							<p class="text-muted">* FREE Version - up to 50 characters</p>						
+		
+		<!-- header !-->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-block">
+								<h1 class="card-title">Eval Expression.NET</h1>
+								<h3>Evaluate, Compile and Execute C# code and expression at runtime</h3>
+							</div>
+							<div class="card-block lead">
+								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+								<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
+								<p class="text-muted">* FREE Version - up to 50 characters</p>						
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-lg-6">
-					<div id="carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
-						<ol class="carousel-indicators">
-							<li data-target="#carousel" data-slide-to="0" class="active"></li>
-							<li data-target="#carousel" data-slide-to="1" class=""></li>
-						</ol>
-						<div class="carousel-inner" role="listbox">
-							<div class="carousel-item active">
-								<div class="carousel-item-container">
+					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">From simple C# expression...</h4>
 {% highlight csharp %}
-// Eval using Class Member
-var price = Eval.Execute("ItemPrice * Quantity", orderItem)
-
-
 // Eval using Anonymous Type
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
 {% endhighlight %}
-								</div>
-								<div class="carousel-caption">
-									<h3>From simple expression...</h3>
-								</div>
 							</div>
-							<div class="carousel-item">
-								<div class="carousel-item-container">
+							<div class="card-block">
+								<h4 class="card-title">To complex code.</h4>
 {% highlight csharp %}
 // Support .NET Language
 // Support .NET Plus Language
@@ -79,278 +72,293 @@ int result = Eval.Execute<int>(@"
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);");
 {% endhighlight %}
-								</div>
-								<div class="carousel-caption">
-									<h3>To complex code.</h3>
-								</div>
-							</div>
+							</div>						
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	
-	<div id="feature">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<a id="execute" href="#"></a>
-					<h2>Eval.Execute</h2>
-					<hr class="m-y-md" />
-					<div class="block-code">
-						<p>Evaluate and execute a code or an expression</p>
-						<h3>Using Class Member</h3>
+		</header>
+		
+		<!-- anchor !-->
+		<a id="features" href="#"></a>
+		
+		<!-- features !-->
+		<div id="feature">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<a id="execute" href="#"></a>
+						<h2>Eval.Execute</h2>
+						<hr class="m-y-md" />
+						<div class="block-code">
+							<p>Evaluate and execute the code or expression.</p>
+							<h3>Anonymous Type</h3>
 {% highlight csharp %}
-var price = Eval.Execute("ItemPrice * Quantity", orderItem)
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
 {% endhighlight %}
-						<h3>Using Anonymous Class</h3>
+							<h3>Class Member</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
+dynamic expandoObject = new ExpandoObject();
+expandoObject.X = 1;
+expandoObject.Y = 2;
+int result = Eval.Execute<int>("X + Y", expandoObject);
 {% endhighlight %}
-						<h3>Using Argument Position</h3>
+							<h3>Dictionary Key</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("{0} + {1}", 1, 2)
+var values = new Dictionary<string, object>() {{"X", 1}, {"Y", 2}};
+int result = Eval.Execute<int>("X + Y", values);
 {% endhighlight %}
-						<h3>Using Extension Methods</h3>
+							<h3>Argument Position</h3>
 {% highlight csharp %}
-string s = "X + Y";
-int result = s.Eval<int>(new { X = 1, Y = 2 });
+int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 {% endhighlight %}
+						</div>
+						<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Execute" target="_blank" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 					</div>
-					<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Execute" target="_blank" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
-				</div>
-				<div class="col-lg-6">
-					<a id="compile" href="#"></a>
-					<h2>Eval.Compile</h2>
-					<hr class="m-y-md" />
-					<div class="block-code">
-						<p>Compile a code or an expression and return a delegate to execute</p>
-						<h3>Using custom Delegate</h3>
+					<div class="col-lg-6">
+						<a id="compile" href="#"></a>
+						<h2>Eval.Compile</h2>
+						<hr class="m-y-md" />
+						<div class="block-code">
+							<p>Compile the code or expression and return a delegate.</p>
+							<h3>Delegate Func</h3>
 {% highlight csharp %}
-var code = "{0}.InternalProperty";
-var compiled = Eval.Compile<Func<int, int>>("code");
+var compiled = Eval.Compile<Func<int, int, int>>("{0} + {1}");
+int result = compiled(1, 2);
 
 foreach(var item in Items)
 {
 	int result = compiled(item);
 }
 {% endhighlight %}
-						<h3>Using Extension Methods</h3>
+							<h3>Delegate Action</h3>
 {% highlight csharp %}
-string code = "{0}.InternalProperty;
-var compiled = code.Compile("item", typeof(Item));
-
-foreach(var item in Items)
-{
-	var result = compiled(item);
-}
+var compiled = Eval.Compile<Action<int, int>>("{0} + {1}");
+compiled(1, 2);
 {% endhighlight %}
-					</div>
-					<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Compile" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<div id="pricing">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<h2>Pricing</h2>
-					<hr class="m-y-md" />
-					<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
-					<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval.NET the best and most robust expression evaluator for .NET language.</p>
-					<p>
-						PRO License starting at <span class="text-bold text-green">ONLY $299</span>
-						<br />
-						<span class="text-muted">+$100/Additional developer seat</span>
-					</p>
-					
-				</div>
-				<div class="col-lg-6">
-					<table class="table table-hover table-bordered">
-						<thead class="thead-inverse">
-							<tr>
-								<th></th>
-								<th>FREE</th>
-								<th>PRO</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th>Maximum Characters</th>
-								<td>50</td>
-								<td>Unlimited</td>
-							</tr>
-							<tr>
-								<th>Commercial License</th>
-								<td><i class="fa fa-times fa-2x"></i></td>
-								<td><i class="fa fa-check-square-o fa-2x"></i></td>
-							</tr>
-							<tr>
-								<th>Royalty-Free</th>
-								<td><i class="fa fa-times fa-2x"></i></td>
-								<td><i class="fa fa-check-square-o fa-2x"></i></td>
-							</tr>
-							<tr>
-								<th>Support & Upgrades (1 year)</th>
-								<td><i class="fa fa-times fa-2x"></i></td>
-								<td><i class="fa fa-check-square-o fa-2x"></i></td>
-							</tr>
-						</tbody>
-					</table>
-					
-					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="return validate()">
-						<input type="hidden" name="cmd" value="_s-xclick">
-						<input type="hidden" name="hosted_button_id" value="PW79CTHBQFBZC">
-						<input type="hidden" name="currency_code" value="USD">
-						<fieldset class="form-group">
-							<input type="hidden" name="on0" value="Seats">
-							<select name="os0" class="form-control">
-								<option value="1 seat">Eval.NET $299 (1 seat)</option>
-								<option value="2 seats">Eval.NET $399 (2 seats)</option>
-								<option value="3 seats">Eval.NET $499 (3 seats)</option>
-								<option value="4 seats">Eval.NET $599 (4 seats)</option>
-								<option value="5-9 seats">Eval.NET $699 (5-9 seats)</option>
-								<option value="10-15 seats">Eval.NET $899 (10-15 seats)</option>
-							</select> 
-						</fieldset>
-						<div class="checkbox">
-							<label>
-								<input id="agree_agreement" type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">License Agreement</a>.
-							</label>
+							<h3>Named Parameter</h3>
+{% highlight csharp %}
+var compiled = Eval.Compile<Func<int, int, int>>("X + Y", "X", "Y");
+int result = compiled(1, 2);
+{% endhighlight %}
 						</div>
-						<button type="submit"  class="btn btn-success btn-lg" ><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
-					</form>					
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	<a id="support" href="#"></a>
-	<div id="support">
-		<div class="container">
-			<h2>Test our Outstanding Support</h2>
-			<p>We usually answer within the next business day, hour, or minutes!</p>
-			<div class="row">
-				<hr class="hidden-sm-up" />
-				<div class="col-sm-6 col-lg-3">
-					<div class="card">
-						<div class="card-block">
-							<h4 class="card-title">Documentation</h4>
-						</div>
-						<a href="/docs/" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
-						<div class="card-block">
-							<p class="card-text">Consult our complete documentation to help you get started</p>
-							<a href="/docs/" target="_blank">Documentation</a>
-						</div>
-					</div>
-				</div>
-				<hr class="hidden-sm-up" />
-				<div class="col-sm-6 col-lg-3">
-					<div class="card">
-						<div class="card-block">
-							<h4 class="card-title">Contact Us</h4>
-						</div>
-						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
-						<div class="card-block">
-							<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
-							<a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>
-						</div>
-					</div>
-				</div>
-				<hr class="hidden-sm-up" />
-				<div class="col-sm-6 col-lg-3">
-					<div class="card">
-						<div class="card-block">
-							<h4 class="card-title">Forum</h4>
-						</div>
-						<a href="mailto:sales@zzzprojects.com"><i class="fa fa-weixin fa-5x"></i></a>
-						<div class="card-block">
-							<p class="card-text">Visit the forum to propose new features or to discuss about the library</p>
-							<a href="https://zzzprojects.uservoice.com/forums/327759-eval-expression-net" target="_blank">Forum</a>
-						</div>
-					</div>
-				</div>
-				<hr class="hidden-sm-up" />
-				<div class="col-sm-6 col-lg-3">
-					<div class="card">
-						<div class="card-block">
-							<h4 class="card-title">Open Source</h4>
-						</div>
-						<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank"><i class="fa fa-github fa-5x"></i></a>
-						<div class="card-block">
-							<p class="card-text">
-							Access the source of the library you're using to understand better its logic</p>
-							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank">GitHub</a>
-						</div>
+						<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Compile" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<div id="product">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-3">
-					<div class="product-section">Bulk Operations</div>
-					<ul>
-						<li><a href="#" target="_blank">.NET Entity Framework Plus</a></li>
-						<li><a href="#" target="_blank">.NET Bulk Operations</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3">
-					<div class="product-section">Expression Evaluation</div>
-					<ul>
-						<li><a href="#" target="_blank">Eval.NET</a></li>
-						<li><a href="#" target="_blank">Eval SQL.NET</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-3">
-					<div class="product-section">Library</div>
-					<ul>
-						<li><a href="#" target="_blank">Extension Methods</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>		
-	</div>
-	
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 text-center-md-down">
-					Copyright © 2015 <a href="http://www.zzzprojects.com/" target="_blank">ZZZ Projects Inc.</a>
-					<div class="hidden-lg-up"></div>All rights reserved
-				</div>
-				<hr class="hidden-lg-up" />
-				<div class="col-lg-6 text-center-md-down text-right-lg-up social">
-					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
-					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank"><i class="fa fa-newspaper-o"></i></a>
+		
+		<!-- anchor !-->
+		<a id="pro" href="#"></a>
+		
+		<!-- pricing !-->
+		<div id="pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2>Pricing</h2>
+						<hr class="m-y-md" />
+						<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
+						<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval.NET the best and most robust expression evaluator for .NET language.</p>
+						<p>
+							PRO License starting at <span class="text-bold text-green">ONLY $299</span>
+							<br />
+							<span class="text-muted">+$100/Additional developer seat</span>
+						</p>
+						
+					</div>
+					<div class="col-lg-6">
+						<table class="table table-hover table-bordered">
+							<thead class="thead-inverse">
+								<tr>
+									<th></th>
+									<th>FREE</th>
+									<th>PRO</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th>Maximum Characters</th>
+									<td>50</td>
+									<td>Unlimited</td>
+								</tr>
+								<tr>
+									<th>Commercial License</th>
+									<td><i class="fa fa-times fa-2x"></i></td>
+									<td><i class="fa fa-check-square-o fa-2x"></i></td>
+								</tr>
+								<tr>
+									<th>Royalty-Free</th>
+									<td><i class="fa fa-times fa-2x"></i></td>
+									<td><i class="fa fa-check-square-o fa-2x"></i></td>
+								</tr>
+								<tr>
+									<th>Support & Upgrades (1 year)</th>
+									<td><i class="fa fa-times fa-2x"></i></td>
+									<td><i class="fa fa-check-square-o fa-2x"></i></td>
+								</tr>
+							</tbody>
+						</table>
+						
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" onsubmit="return validate()">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="PW79CTHBQFBZC">
+							<input type="hidden" name="currency_code" value="USD">
+							<fieldset class="form-group">
+								<input type="hidden" name="on0" value="Seats">
+								<select name="os0" class="form-control">
+									<option value="1 seat">Eval.NET $299 (1 seat)</option>
+									<option value="2 seats">Eval.NET $399 (2 seats)</option>
+									<option value="3 seats">Eval.NET $499 (3 seats)</option>
+									<option value="4 seats">Eval.NET $599 (4 seats)</option>
+									<option value="5-9 seats">Eval.NET $699 (5-9 seats)</option>
+									<option value="10-15 seats">Eval.NET $899 (10-15 seats)</option>
+								</select> 
+							</fieldset>
+							<div class="checkbox">
+								<label>
+									<input id="agree_agreement" type="checkbox">I have read and agree to the <a href="" target="http://www.zzzprojects.com/license-agreement/">License Agreement</a>.
+								</label>
+							</div>
+							<button type="submit"  class="btn btn-success btn-lg" ><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
+						</form>					
+					</div>
 				</div>
 			</div>
 		</div>
-	</footer>
-	
-	<div id="error_validation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h4 class="modal-title" id="myModalLabel">License Agreement</h4>
-				</div>
-				<div class="modal-body bg-danger">
-					You must read and agree to the License Agreement.
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+		
+		<!-- anchor !-->
+		<a id="support" href="#"></a>
+		
+		<!-- support !-->
+		<div id="support">
+			<div class="container">
+				<h2>Test our Outstanding Support</h2>
+				<p>We usually answer within the next business day, hour, or minutes!</p>
+				<div class="row">
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Documentation</h4>
+							</div>
+							<a href="/docs/" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Consult our complete documentation to help you get started</p>
+								<a href="/docs/" target="_blank">Documentation</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Contact Us</h4>
+							</div>
+							<a href="mailto:sales@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
+								<a href="mailto:sales@zzzprojects.com">sales@zzzprojects.com</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Forum</h4>
+							</div>
+							<a href="mailto:sales@zzzprojects.com"><i class="fa fa-weixin fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Visit the forum to propose new features or to discuss about the library</p>
+								<a href="https://zzzprojects.uservoice.com/forums/327759-eval-expression-net" target="_blank">Forum</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Open Source</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">
+								Access the source of the library you're using to understand better its logic</p>
+								<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank">GitHub</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+		
+		<!-- anchor !-->
+		<a id="product" href="#"></a>
+		
+		<!-- other product !-->
+		<div id="product">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3">
+						<div class="product-section">Bulk Operations</div>
+						<ul>
+							<li><a href="#" target="_blank">.NET Entity Framework Plus</a></li>
+							<li><a href="#" target="_blank">.NET Bulk Operations</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<div class="product-section">Expression Evaluation</div>
+						<ul>
+							<li><a href="#" target="_blank">Eval.NET</a></li>
+							<li><a href="#" target="_blank">Eval SQL.NET</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-3">
+						<div class="product-section">Library</div>
+						<ul>
+							<li><a href="#" target="_blank">Extension Methods</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>		
+		</div>
+		
+		<!-- footer !-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 text-center-md-down">
+						Copyright © 2015 <a href="http://www.zzzprojects.com/" target="_blank">ZZZ Projects Inc.</a>
+						<div class="hidden-lg-up"></div>All rights reserved
+					</div>
+					<hr class="hidden-lg-up" />
+					<div class="col-lg-6 text-center-md-down text-right-lg-up social">
+						<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank"><i class="fa fa-newspaper-o"></i></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- validation !-->
+		<div id="error_validation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="myModalLabel">License Agreement</h4>
+					</div>
+					<div class="modal-body bg-danger">
+						You must read and agree to the License Agreement.
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.min.js"></script>
@@ -404,17 +412,13 @@ foreach(var item in Items)
 		text-align: right;
 	}
 }
+
 /* section general */
 #top-header {
-    background: -moz-linear-gradient(top, #111, #222);
-    background: -webkit-linear-gradient(top, #111, #222);
-    background: -ms-linear-gradient(top, #111, #222);
-    background: -o-linear-gradient(top, #111, #222);
-    background: linear-gradient(top, #111, #222);
-	border-bottom: 1px solid #111;
+	background-color: #111;
+	border-bottom: 1px solid #000;
 	font-size: 14px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding: 5px 0px;
 }
 header {
 	background: -moz-linear-gradient(top, #222, #333);
@@ -486,6 +490,12 @@ footer {
 }
 
 /* header */
+header .card {
+	background-color: transparent;
+	border: none;
+	color: #f1f1f1;
+}
+
 header .jumbotron {
 	background-color: transparent;
 	color: #f1f1f1;
