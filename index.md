@@ -521,6 +521,9 @@ header .card .card-code {
 	min-height: 350px;
 }
 
+header .card .card-code {
+	padding: 0px;
+}
 header .card .card-code .highlight,
 header .card .card-code .highlight pre {
 	background-color: transparent;
