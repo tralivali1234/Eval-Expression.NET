@@ -68,8 +68,8 @@ int result = Eval.Execute<int>(@"
 	return result.Sum(x => x);");
 	
 // Support full C# Syntax including:
-// - Extension Methods
 // - Anonymous Type
+// - Extension Methods
 // - Generic Type
 {% endhighlight %}	
 							</div>
