@@ -85,14 +85,15 @@ int result = Eval.Execute<int>(@"
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
-						<a id="execute" href="#"></a>
+						<!-- anchor !-->
+						<a id="eval_execute" href="#"></a>
 						<h2>Eval.Execute</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
 							<p>Evaluate and execute the code or expression</p>
 							<h3>Anonymous Class</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2});
 {% endhighlight %}
 							<h3>Class Member</h3>
 {% highlight csharp %}
@@ -113,7 +114,8 @@ int result = s.Execute<int>(code, new { X = 1, Y = 2});
 						</div>
 					</div>
 					<div class="col-lg-6">
-						<a id="compile" href="#"></a>
+						<!-- anchor !-->
+						<a id="eval_compile" href="#"></a>
 						<h2>Eval.Compile</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
