@@ -321,14 +321,15 @@ foreach(var item in Items)
 		
 		<!-- footer !-->
 		<footer>
-			<div class="container">
+			<div class="container text-center-md-down">
 				<div class="row">
-					<div class="col-lg-6 text-center-md-down">
-						Copyright © 2015 <a href="http://www.zzzprojects.com/" target="_blank">ZZZ Projects Inc.</a>
-						<div class="hidden-lg-up"></div>All rights reserved
+					<div class="col-lg-6">
+						Copyright © 2015 <a href="http://www.zzzprojects.com/" target="_blank" class="text-bold">ZZZ Projects Inc.</a>
+						<div class="hidden-lg-up"></div>
+						All rights reserved
 					</div>
 					<hr class="hidden-lg-up" />
-					<div class="col-lg-6 text-center-md-down text-right-lg-up social">
+					<div class="col-lg-6 text-right-lg-up social">
 						<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
 						<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
@@ -628,29 +629,26 @@ header .card .card-code .highlight pre {
 }
 
 /* footer */
-footer hr {
-	border-color: #666;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-footer a {
-	color: #666;
-	text-decoration: none;
-}
-footer a:hover {
-	color: #666;
-	opacity: 0.7;
-    transition: all 0.4s ease-in-out 0s;
-	text-decoration: none;
-}
-footer .social a {
-	font-size: 24px;
-	padding-left: 10px;
-	padding-right: 10px;
-}
 @media (max-width: 61em) {
   footer {
 	padding: 20px 0;
   }
+}
+footer hr {
+	border-color: #666;
+	margin: 20px;
+}
+footer a {
+	color: #666;
+}
+footer a:hover {
+	color: #666;
+	opacity: 0.7;
+	text-decoration: none;
+    transition: all 0.4s ease-in-out 0s;
+}
+footer .social a {
+	font-size: 24px;
+	padding: 0px 10px;
 }
 </style>
