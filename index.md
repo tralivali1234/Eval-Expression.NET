@@ -539,8 +539,8 @@ header .card .card-code .highlight pre {
 	border: none;
 }
 @media (max-width: 33em) {
-	header .card h1.display-2{
-		font-size: 4.5rem;
+	header .card h1 {
+		font-size: 2.5rem;
 	}
 	header .card .lead .btn {
 		margin-bottom: 20px;
@@ -619,6 +619,9 @@ header .card .card-code .highlight pre {
 #product ul {
 	list-style: none;
 	padding-left: 0px;
+}
+#product ul li {
+	padding-top: 5px;
 }
 #product a {
 	color: #999;
