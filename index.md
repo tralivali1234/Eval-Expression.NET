@@ -1,8 +1,6 @@
 ---
 layout: post
 ---
-
-{% include head.html %}
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
