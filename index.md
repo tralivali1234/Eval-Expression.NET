@@ -1,6 +1,7 @@
 ---
 layout: post
 ---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -45,7 +46,7 @@ layout: post
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-									<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
+									<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
 									<p class="text-muted">* FREE Version - up to 50 characters</p>						
 								</div>
 							</div>
@@ -299,10 +300,10 @@ foreach(var item in list)
 							<div class="card-block">
 								<h4 class="card-title">Open Source</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank"><i class="fa fa-github fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Access the source of the library you're using to understand better its logic.</p>
-								<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank">GitHub</a>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank">GitHub</a>
 							</div>
 						</div>
 					</div>
