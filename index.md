@@ -89,56 +89,62 @@ int result = Eval.Execute<int>(@"
 						<h2>Eval.Execute</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
-							<p>Evaluate and execute a code or an expression</p>
-							<h3>Using Class Member</h3>
+							<p>Evaluate and execute the code or expression</p>
+							<h3>Anonymous Class</h3>
 {% highlight csharp %}
-var price = Eval.Execute("ItemPrice * Quantity", orderItem)
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
 {% endhighlight %}
-							<h3>Using Anonymous Class</h3>
+							<h3>Class Member</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
+dynamic expandoObject = new ExpandoObject();
+expandoObject.X = 1;
+expandoObject.Y = 2;
+int result = Eval.Execute<int>("X + Y", expandoObject);
 {% endhighlight %}
-							<h3>Using Argument Position</h3>
+							<h3>Argument Position</h3>
 {% highlight csharp %}
-int result = Eval.Execute<int>("{0} + {1}", 1, 2)
+int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 {% endhighlight %}
-							<h3>Using Extension Methods</h3>
+							<h3>Extension Methods</h3>
 {% highlight csharp %}
 string s = "X + Y";
-int result = s.Eval<int>(new { X = 1, Y = 2 });
+int result = s.Execute<int>(code, new { X = 1, Y = 2});
 {% endhighlight %}
 						</div>
-						<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Execute" target="_blank" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 					</div>
 					<div class="col-lg-6">
 						<a id="compile" href="#"></a>
 						<h2>Eval.Compile</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
-							<p>Compile a code or an expression and return a delegate to execute</p>
-							<h3>Using custom Delegate</h3>
+							<p>Compile the code or expression and return a delegate</p>
+							<h3>Custom Delegate</h3>
 {% highlight csharp %}
-var code = "{0}.InternalProperty";
-var compiled = Eval.Compile<Func<int, int>>("code");
+string code = "Price * Quantity";
+var compiled = Eval.Compile<Func<OrderItem, decimal>>(code);
 
-foreach(var item in Items)
+decimal totals = 0;
+foreach(var item in list)
 {
-	int result = compiled(item);
+    totals += compiled(item);
 }
 {% endhighlight %}
-							<h3>Using Extension Methods</h3>
+							<h3>Extension Methods</h3>
 {% highlight csharp %}
-string code = "{0}.InternalProperty;
-var compiled = code.Compile("item", typeof(Item));
+string s = "Price * Quantity";
+var compiled = s.Compile<Func<OrderItem, decimal>>(code);
 
-foreach(var item in Items)
+decimal totals = 0;
+foreach(var item in list)
 {
-	var result = compiled(item);
+    totals += compiled(item);
 }
 {% endhighlight %}
 						</div>
-						<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Compile" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
 					</div>
+				</div>
+				<div class="text-center">
+					<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -160,6 +166,9 @@ foreach(var item in Items)
 							<br />
 							<span class="text-muted">+$100/Additional developer seat</span>
 						</p>
+						<hr class="m-y-md" />
+						<p>With the free version comes a month long trial of the pro license to let you evaluate all its functonalities without limits.</p>
+												
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
@@ -426,6 +435,7 @@ header {
     background: -ms-linear-gradient(top, #ddd, #f2f2f2);
     background: -o-linear-gradient(top, #ddd, #f2f2f2);
     background: linear-gradient(top, #ddd, #f2f2f2);
+	border-bottom: 1px solid #ddd;
     border-top: 1px solid #eee;
 	padding-bottom: 60px;
 }
@@ -518,7 +528,6 @@ header .card .card-code {
 	color: #000;
 	min-height: 350px;
 }
-
 header .card .card-code {
 	padding: 0px;
 }
@@ -528,17 +537,12 @@ header .card .card-code .highlight pre {
 	border: none;
 }
 @media (max-width: 33em) {
-	header .jumbotron h1.display-2{
+	header .card h1.display-2{
 		font-size: 4.5rem;
 	}
-	header .jumbotron .lead .btn {
+	header .card .lead .btn {
 		margin-bottom: 20px;
 	}
-}
-@media (max-width: 61em) {
-  header #carousel {
-    margin-top: 0px;
-  }
 }
 
 /* feature */
@@ -553,13 +557,9 @@ header .card .card-code .highlight pre {
 	font-size: 16px;
 	text-decoration: underline;
 }
-#feature .block-code {
-	min-height: 500px;
-}
 #feature .btn {
 	margin-top: 40px;
 }
-
 @media (min-width: 62em) {
 	#feature .row .col-lg-6:first-child {
 		padding-right: 45px;
