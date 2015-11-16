@@ -45,16 +45,18 @@ layout: post
 							<div class="card-block">
 								<h1 class="card-title">Eval Expression.NET</h1>
 								<h3>Evaluate, Compile and Execute C# code and expression at runtime</h3>
-							</div>
-							<hr class="m-y-md" />
-							<div class="card-block lead">
-								<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-								<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-								<p class="text-muted">* FREE Version - up to 50 characters</p>						
+								<hr class="m-y-md" />
+								<div class="lead">
+									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+									<a href="https://github.com/zzzprojects/Z.Expressions.Eval" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
+									<p class="text-muted">* FREE Version - up to 50 characters</p>						
+								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-6">
+						<div class="card">
+							<div class="card-block card-code">
 {% highlight csharp %}
 // From simple expression...
 int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
@@ -64,7 +66,9 @@ int result = Eval.Execute<int>(@"
 	var list = new List<int>() { 1..100 };
 	var filter = list.Where(x => x < 3);
 	return result.Sum(x => x);");
-{% endhighlight %}					
+{% endhighlight %}		
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -82,25 +86,23 @@ int result = Eval.Execute<int>(@"
 						<h2>Eval.Execute</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
-							<p>Evaluate and execute the code or expression.</p>
+							<p>Evaluate and execute a code or an expression</p>
+							<h3>Using Class Member</h3>
 {% highlight csharp %}
-// Anonymous Type
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
-
-// Class Member
-dynamic expandoObject = new ExpandoObject();
-expandoObject.X = 1;
-expandoObject.Y = 2;
-int result = Eval.Execute<int>("X + Y", expandoObject);
-
-// Dictionary Key
-var values = new Dictionary<string, object>() { 
-	{"X", 1}, {"Y", 2} 
-};
-int result = Eval.Execute<int>("X + Y", values);
-
-// Argument Position
-int result = Eval.Execute<int>("{0} + {1}", 1, 2);
+var price = Eval.Execute("ItemPrice * Quantity", orderItem)
+{% endhighlight %}
+							<h3>Using Anonymous Class</h3>
+{% highlight csharp %}
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2})
+{% endhighlight %}
+							<h3>Using Argument Position</h3>
+{% highlight csharp %}
+int result = Eval.Execute<int>("{0} + {1}", 1, 2)
+{% endhighlight %}
+							<h3>Using Extension Methods</h3>
+{% highlight csharp %}
+string s = "X + Y";
+int result = s.Eval<int>(new { X = 1, Y = 2 });
 {% endhighlight %}
 						</div>
 						<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Execute" target="_blank" role="button">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
@@ -110,24 +112,26 @@ int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 						<h2>Eval.Compile</h2>
 						<hr class="m-y-md" />
 						<div class="block-code">
-							<p>Compile the code or expression and return a delegate.</p>
+							<p>Compile a code or an expression and return a delegate to execute</p>
+							<h3>Using custom Delegate</h3>
 {% highlight csharp %}
-// Delegate Func
-var compiled = Eval.Compile<Func<int, int, int>>("{0} + {1}");
-int result = compiled(1, 2);
+var code = "{0}.InternalProperty";
+var compiled = Eval.Compile<Func<int, int>>("code");
 
 foreach(var item in Items)
 {
 	int result = compiled(item);
 }
+{% endhighlight %}
+							<h3>Using Extension Methods</h3>
+{% highlight csharp %}
+string code = "{0}.InternalProperty;
+var compiled = code.Compile("item", typeof(Item));
 
-// Delegate Action
-var compiled = Eval.Compile<Action<int, int>>("{0} + {1}");
-compiled(1, 2);
-
-// Named Parameter
-var compiled = Eval.Compile<Func<int, int, int>>("X + Y", "X", "Y");
-int result = compiled(1, 2);
+foreach(var item in Items)
+{
+	var result = compiled(item);
+}
 {% endhighlight %}
 						</div>
 						<div class="text-center"><a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki/Eval-Compile" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a></div>
@@ -416,6 +420,7 @@ header {
     background: linear-gradient(top, #222, #333);
 	border-bottom: 1px solid #111;
 	border-top: 1px solid #333;
+	padding: 40px 0px;
 }
 #feature {
     background: -moz-linear-gradient(top, #ddd, #f2f2f2);
@@ -483,61 +488,40 @@ header .card {
 	border: none;
 	color: #f1f1f1;
 }
-
-header .jumbotron {
-	background-color: transparent;
-	color: #f1f1f1;
-	margin-bottom: 0px;
-	padding-top: 20px;
-}
-header .jumbotron h1 {
+header .card h1 {
 	font-size: 3.0rem;
 }
-header .jumbotron h3 {
+header .card h3 {
 	font-size: 1.3rem;
 }
-header .jumbotron hr {
+header .card hr {
 	border-color: initial;
 }
-header .jumbotron .lead .btn {
+header .card .lead .btn {
 	width: 175px;
 }
-header .jumbotron .lead .btn-left {
+header .card .lead .btn-left {
 	margin-right: 20px;
 }
-header .jumbotron .lead .btn span {
+header .card .lead .btn span {
 	display: inline-block;
 	height: 40px;
 }
-header .jumbotron .lead .btn span span {
+header .card .lead .btn span span {
 	vertical-align : middle;
 }
-header .jumbotron .lead .text-muted {
+header .card .lead .text-muted {
 	font-size: 14px;
 	padding-top: 10px;
 }
-header #carousel {
+header .card .card-code {
 	background-color: #f1f1f1;
 	border: 2px solid #444;
 	color: #000;
-	margin-top: 64px;
-	margin-bottom: 64px;
+	min-height: 350px;
 }
-header .carousel-item {
-	height:300px;
-	vertical-align: middle;
-}
-header .carousel-caption,
-header .carousel-control {
-	color: #000;
-	text-shadow: none;
-}
-header .carousel-indicators li {
-	border: 1px solid #000;
-}
-header .carousel-indicators .active {
-	background-color: #000;
-}
+
+
 header #carousel .highlight,
 header #carousel .highlight pre {
 	background-color: transparent;
