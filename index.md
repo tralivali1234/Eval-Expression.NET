@@ -8,7 +8,7 @@ layout: post
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="Evaluate, Compile and Execute C# code and expression at runtime.">
-		<meta name="keywords" content=".NET, dotnet, C#, CSharp, VB, Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime">
+<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB">
 		<title>Evaluate, Compile and Execute C# code and expression at runtime.</title>
 		<link rel="icon" type="image/png" href="http://eval-expression.net/images/logo.png">
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
