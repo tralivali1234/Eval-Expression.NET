@@ -172,7 +172,7 @@ foreach(var item in list)
 							PRO License starting at <span class="text-bold text-green">ONLY $299</span>
 						</p>
 						<hr class="m-y-md" />
-						<p>With the free version comes a month long trial of the pro license to let you evaluate all its functonalities without limits.</p>
+						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>
 												
 					</div>
 					<div class="col-lg-6">
