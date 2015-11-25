@@ -52,7 +52,7 @@ layout: post
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 									<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-									<p class="text-muted">* FREE Version - up to 50 characters</p>						
+									<p class="text-muted">* FREE Version limited to 50 characters</p>						
 								</div>
 							</div>
 						</div>
