@@ -34,11 +34,6 @@ layout: post
 			</div>
 		</div>
 		
-		<!-- announcement !-->
-		<div id="announcement" class="text-center">
-			Stable version available on December 01 2015
-		</div>
-		
 		<!-- header !-->
 		<header>
 			<div class="container">
