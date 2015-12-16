@@ -211,10 +211,10 @@ foreach(var item in list)
 								<input type="hidden" name="on0" value="Seats">
 								<select name="os0" class="form-control">
 									<option value="1 seat">Eval Expression.NET $299 (1 seat)</option>
-									<option value="2-4 seats">Eval Expression.NET $449 (2-4 seats)</option>
-									<option value="5-9 seats">Eval Expression.NET $599 (5-9 seats)</option>
-									<option value="10-14 seats">Eval Expression.NET $749 (10-14 seats)</option>
-									<option value="15-19 seats">Eval Expression.NET $899 (15-19 seats)</option>
+									<option value="2-4 seats">Eval Expression.NET $399 (2-4 seats)</option>
+									<option value="5-9 seats">Eval Expression.NET $499 (5-9 seats)</option>
+									<option value="10-14 seats">Eval Expression.NET $599 (10-14 seats)</option>
+									<option value="15-19 seats">Eval Expression.NET $699 (15-19 seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
