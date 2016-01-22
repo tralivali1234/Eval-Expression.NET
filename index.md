@@ -9,6 +9,7 @@ layout: post
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="description" content="C# Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB">
+		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<title>C# Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.</title>
 		<link rel="icon" type="image/png" href="http://eval-expression.net/images/logo.png">
 		<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.min.css">
