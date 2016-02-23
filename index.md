@@ -101,11 +101,9 @@ int result = Eval.Execute<int>(@"
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// Easy to use
-context.BulkSaveChanges();
-
-// Easy to customize
-context.BulkSaveChanges(operation => operation.BatchSize = 1000);
+int result = Eval.Execute<int>(@"
+var list = new List<int>() { 1, 2, 3, 4, 5 };
+return list.Where(x => x > X).Take(Y).Count();
 {% endhighlight %}
 					</div>
 				</div>
@@ -141,11 +139,21 @@ context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// Easy to use
-context.BulkSaveChanges();
+// Anonymous Type
+int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2} );
 
-// Easy to customize
-context.BulkSaveChanges(operation => operation.BatchSize = 1000);
+// Class Member
+dynamic expandoObject = new ExpandoObject();
+expandoObject.X = 1;
+expandoObject.Y = 2;
+int result = Eval.Execute<int>("X + Y", expandoObject);
+
+// Dictionary Key
+var values = new Dictionary<string, object>() {{"X", 1}, {"Y", 2}};
+int result = Eval.Execute<int>("X + Y", values);
+
+// Argument Position
+int result = Eval.Execute<int>("{0} + {1}", 1, 2);
 {% endhighlight %}
 					</div>
 				</div>
@@ -165,16 +173,9 @@ context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// Use all kind of bulk operations
-context.BulkInsert(customers);
-context.BulkUpdate(customers);
-context.BulkDelete(customers);
-
-// Customize your operation
-context.BulkMerge(customers, operation => {
-   operation.BatchSize = 1000;
-   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
-});
+int result = Eval.Execute<int>(@"
+var list = new List<int>() { 1, 2, 3, 4, 5 };
+return list.Where(x => x > X).Take(Y).Count();
 {% endhighlight %}	
 					</div>
 				</div>
@@ -195,13 +196,10 @@ context.BulkMerge(customers, operation => {
 					</div>
 					<div class="col-lg-7">
 {% highlight csharp %}
-// DELETE all users inactive for 2 years
-ctx.Users.Where(x => x.LastLoginDate < DateTime.Now.AddYears(-2))
-         .Delete();
+var customer = new Customer() { Name = "ZZZ" };
 
-// DELETE using a BatchSize
-ctx.Users.Where(x => x.LastLoginDate < DateTime.Now.AddYears(-2))
-         .Delete(x => x.BatchSize = 1000);
+var nameGetter = Eval.Compile<Func<Customer, string>>("x.Name", "x");
+var name = nameGetter(customer);
 {% endhighlight %}	
 					</div>
 				</div>	
