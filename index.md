@@ -5,23 +5,25 @@ layout: post
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
+		
+		<!-- seo !-->
 		<meta name="description" content="Evaluate, Compile and Execute dynamic C# code and expression at runtime">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB">
-		<meta name="msvalidate.01" content="89359D9C492A475C0061398008D105FB" />
 		<title>C# Eval Function | C# Expression Evaluator to Evaluate, Compile and Execute dynamic C# code and expression at runtime.</title>
-		<link rel="icon" type="image/png" href="http://eval-expression.net/images/logo.png">
+		
+		<!-- icon/css !-->
+		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="/css/github.css">
+		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/github2.css">
+		<link rel="stylesheet" type="text/css" href="http://entityframework-plus.net/css/default.css">
 	</head>
 	
 	<body>
-		<!-- anchor !-->
-		<a id="download" href="#"></a>
-		<a id="github" href="#"></a>
-		
+  
 		<!-- top-header !-->
 		<div id="top-header">
 			<div class="container">
@@ -29,8 +31,8 @@ layout: post
 					<a href="mailto:info@zzzprojects.com"><i class="fa fa-envelope"></i>&nbsp;&nbsp;info@zzzprojects.com</a>
 					<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 					<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-					<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
-					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-sm-down"><i class="fa fa-newspaper-o"></i></a>
+					<a href="https://plus.google.com/+Zzzprojects_NetSQL" target="_blank"><i class="fa fa-google-plus"></i></a>
+					<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank" class="hidden-xs-down"><i class="fa fa-newspaper-o"></i></a>
 				</div>
 			</div>
 		</div>
@@ -43,12 +45,13 @@ layout: post
 						<div class="card">
 							<div class="card-block">
 								<h3 class="card-title">Eval Expression.NET</h3>
+								<hr class="m-y-md" />
 								<h1>Evaluate, Compile and Execute dynamic C# code and expression at runtime</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
 									<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
-									<p class="text-muted">* FREE Version limited to 50 characters</p>						
+									<p class="text-muted">* FREE Version limited to 50 characters</p>		
 								</div>
 							</div>
 						</div>
@@ -78,98 +81,215 @@ int result = Eval.Execute<int>(@"
 			</div>
 		</header>
 		
-		<!-- anchor !-->
-		<a id="features" href="#"></a>
-		
-		<!-- features !-->
-		<div id="feature">
+		<!-- featured !-->
+		<div id="featured">
 			<div class="container">
+			
+				<!-- C# Eval Function like JavaScript !-->
+				<h2>C# Eval Function like JavaScript</h2>
 				<div class="row">
-					<div class="col-lg-6">
-						<!-- anchor !-->
-						<a id="eval_execute" href="#"></a>
-						<h2>Eval.Execute</h2>
-						<hr class="m-y-md" />
-						<div class="block-code">
-							<p>Evaluate and execute the code or expression</p>
-							<h3>Anonymous Class</h3>
-{% highlight csharp %}
-int result = Eval.Execute<int>("X + Y", new { X = 1, Y = 2});
-{% endhighlight %}
-							<h3>Class Member</h3>
-{% highlight csharp %}
-dynamic expandoObject = new ExpandoObject();
-expandoObject.X = 1;
-expandoObject.Y = 2;
-int result = Eval.Execute<int>("X + Y", expandoObject);
-{% endhighlight %}
-							<h3>Argument Position</h3>
-{% highlight csharp %}
-int result = Eval.Execute<int>("{0} + {1}", 1, 2);
-{% endhighlight %}
-							<h3>Extension Methods</h3>
-{% highlight csharp %}
-string s = "X + Y";
-int result = s.Execute<int>(code, new { X = 1, Y = 2});
-{% endhighlight %}
-						</div>
+					<div class="col-lg-5">
+						<p class="featured-tagline">Use <span class="text-font-red">flexibility</span> of an Eval function in C# to build great dynamic application. C# developer doesn't have any more to be jealous of JavaScript Eval!</p>
+						<ul class="featured-list-sm">
+							<li>Anonymous Type</li>
+							<li>Extension Methods</li>
+							<li>Generic Type</li>
+							<li>Lambda Expression</li>
+							<li>LINQ</li>
+							<li>And more...</li>
+						</ul>
 					</div>
-					<div class="col-lg-6">
-						<!-- anchor !-->
-						<a id="eval_compile" href="#"></a>
-						<h2>Eval.Compile</h2>
-						<hr class="m-y-md" />
-						<div class="block-code">
-							<p>Compile the code or expression and return a delegate</p>
-							<h3>Custom Delegate</h3>
+					<div class="col-lg-7">
 {% highlight csharp %}
-string code = "Price * Quantity";
-var compiled = Eval.Compile<Func<OrderItem, decimal>>(code);
+// Easy to use
+context.BulkSaveChanges();
 
-decimal totals = 0;
-foreach(var item in list)
-{
-    totals += compiled(item);
-}
+// Easy to customize
+context.BulkSaveChanges(operation => operation.BatchSize = 1000);
 {% endhighlight %}
-							<h3>Extension Methods</h3>
-{% highlight csharp %}
-string s = "Price * Quantity";
-var compiled = s.Compile<Func<OrderItem, decimal>>(code);
-
-decimal totals = 0;
-foreach(var item in list)
-{
-    totals += compiled(item);
-}
-{% endhighlight %}
-						</div>
 					</div>
-				</div>
-				<div class="text-center">
-					<a class="btn btn-primary btn-lg" href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" role="button" target="_blank">Learn More&nbsp;<i class="fa fa-hand-o-right"></i></a>
 				</div>
 			</div>
 		</div>
 		
-		<!-- anchor !-->
-		<a id="pro" href="#"></a>
+		<!-- testimonials !-->
+		<div id="testimonials">
+			<div class="container">
+				<h2>Amazing <span class="text-bold-red">performance</span>, outstanding <span class="text-bold-red">support</span>!</h2>
+				<ul>
+					<li>- "We were very, very pleased with the customer support. There was no question, problem or wish, that was not answered AND solved within days! We think that’s very unique!" Klemens Stelzmüller, <a href="http://www.beka-software.at/" target="_blank">Beka-software</a></li>
+					<li>- "I’d definitely recommend it, as it is a great product with a great performance and reliability." Eric Rey, <a href="http://www.transturcarrental.com/" target="_blank">Transtur</a></li>
+				</ul>
+				<p><span class="text-bold-red">Share</span> your experience, we love to hear from you: <a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a></p>
+			</div>
+		</div>
+		
+		<!-- features !-->
+		<div id="feature">
+			<div class="container">
+				<!-- Evaluate dynamic arithmetic/math expression !-->
+				<a id="evaluate-dynamic-arithmetic-math-expression" href="#"></a>
+				<h2>Evaluate dynamic arithmetic/math expression</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Use a <span class="text-bold-red">complete</span> and <span class="text-bold-red">fast</span> compiler which support nearly everything.</p>
+						<ul>
+							<li>Operator Precedence</li>
+							<li>Parenthesis</li>
+							<li>Pow Operator (2^^3 = 8)</li>
+						</ul>
+					</div>
+					<div class="col-lg-7">
+{% highlight csharp %}
+// Easy to use
+context.BulkSaveChanges();
+
+// Easy to customize
+context.BulkSaveChanges(operation => operation.BatchSize = 1000);
+{% endhighlight %}
+					</div>
+				</div>
+
+				<hr class="m-y-md" />
+				
+				<!-- Execute dynamic string code !-->
+				<a id="execute-dynamic-string-code" href="#"></a>
+				<h2>Execute dynamic string code</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Improve your applications <span class="text-bold-red">flexibility</span> by executing code using the same C# Syntax.</p>
+						<ul>
+							<li>Evaluate stored formula</li>
+							<li>Perform LINQ operations with string</li>
+						</ul>
+					</div>
+					<div class="col-lg-7">
+{% highlight csharp %}
+// Use all kind of bulk operations
+context.BulkInsert(customers);
+context.BulkUpdate(customers);
+context.BulkDelete(customers);
+
+// Customize your operation
+context.BulkMerge(customers, operation => {
+   operation.BatchSize = 1000;
+   operation.ColumnPrimaryKeyExpression = customer => customer.Code;
+});
+{% endhighlight %}	
+					</div>
+				</div>
+
+				<hr class="m-y-md" />
+				
+				<!-- Compile fast property getter/setter !-->
+				<a id="compile-fast-property-getter-setter" href="#"></a>
+				<h2>Compile fast property getter/setter</h2>
+				<div class="row">
+					<div class="col-lg-5">
+						<p class="feature-tagline">Improve your code <span class="text-bold-red">readability</span> and <span class="text-bold-red">maintainability</span> with an easy-to-use and easy-to-understand API.</p>
+						<ul>
+							<li>Access internal and private property</li>
+							<li>Avoid using slow reflection</li>
+							<li>Avoid making complex lambda expression</li>
+						</ul>						
+					</div>
+					<div class="col-lg-7">
+{% highlight csharp %}
+// DELETE all users inactive for 2 years
+ctx.Users.Where(x => x.LastLoginDate < DateTime.Now.AddYears(-2))
+         .Delete();
+
+// DELETE using a BatchSize
+ctx.Users.Where(x => x.LastLoginDate < DateTime.Now.AddYears(-2))
+         .Delete(x => x.BatchSize = 1000);
+{% endhighlight %}	
+					</div>
+				</div>	
+			</div>
+		</div>
+		
+		<!-- support !-->
+		<a id="supports" href="#"></a>
+		<div id="support">
+			<div class="container">
+				<h2>Test our outstanding Support</h2>
+				<h3>We usually answer within the next business day, hour, or minutes!</h3>
+				<div class="row">
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Contact Us</h4>
+							</div>
+							<a href="mailto:info@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
+								<a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Documentation</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Consult our complete documentation to help you getting started.</p>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank">Documentation</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Forum</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank">Forum</a>
+							</div>
+						</div>
+					</div>
+					<hr class="hidden-sm-up" />
+					<div class="col-sm-6 col-lg-3">
+						<div class="card">
+							<div class="card-block">
+								<h4 class="card-title">Open Source</h4>
+							</div>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<div class="card-block">
+								<p class="card-text">Access the source of the library you're using to understand better its logic.</p>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank">GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		
 		<!-- pricing !-->
+		<a id="pro" href="#"></a>
 		<div id="pricing">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6">
 						<h2>Pricing</h2>
 						<hr class="m-y-md" />
-						<p>Become a <span class="text-bold text-green">PRO</span> now and start saving time and money!</p>
-						<p>Thousands of <span class="text-bold">development hours</span> and thousands of <span class="text-bold">unit tests</span> to make Eval Expression.NET the best and most robust C# expression evaluator.</p>
-						<p>
-							PRO License starting at <span class="text-bold text-green">ONLY $299</span>
-						</p>
+						<p class="pricing-tagline">Use a well-coded and well-tested compiler to evaluate and execute your dynamic code and expressions.</p>
+						<ul>
+							<li>Add flexibility to your application</li>
+							<li>Increase readability over reflection/expression</li>
+							<li>Reduce development cost and time with a working library</li>
+						</ul>
+						<p class="pricing-tagline">C# developer are waited so long to get an Eval function, it's now possible and easy to make incredible dynamic library.</p>
 						<hr class="m-y-md" />
-						<p>Every month, a new monthly trial of the PRO Version is available to let you evaluate all its features without limitations.</p>
-												
+						<p class="pricing-tagline">Want to evaluate C# code directly in SQL Server? <a href="http://eval-sql.net/">Eval-SQL.NET</a></p>
+						<hr class="m-y-md" />
+						<p>Every month, a <a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
@@ -225,7 +345,7 @@ foreach(var item in list)
 							</div>
 							<button type="submit" class="btn btn-success btn-lg"><span><i class="fa fa-shopping-cart"></i>&nbsp;<span>BUY NOW</span></span></button>
 							<div><br />* Contact us for invoice or payment method alternative.</div>
-						</form>					
+						</form>	
 					</div>
 				</div>
 			</div>
@@ -248,69 +368,6 @@ foreach(var item in list)
 			</div>
 		</div>
 
-		<!-- support !-->
-		<div id="support">
-			<div class="container">
-				<h2>Test our Outstanding Support</h2>
-				<h3>We usually answer within the next business day, hour, or minutes!</h3>
-				<div class="row">
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Documentation</h4>
-							</div>
-							<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank">Documentation</a>
-							</div>
-						</div>
-					</div>
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Contact Us</h4>
-							</div>
-							<a href="mailto:info@zzzprojects.com"><i class="fa fa-users fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Email our team for any type of questions. We love to hear from you!</p>
-								<a href="mailto:info@zzzprojects.com">info@zzzprojects.com</a>
-							</div>
-						</div>
-					</div>
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Forum</h4>
-							</div>
-							<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank">Forum</a>
-							</div>
-						</div>
-					</div>
-					<hr class="hidden-sm-up" />
-					<div class="col-sm-6 col-lg-3">
-						<div class="card">
-							<div class="card-block">
-								<h4 class="card-title">Open Source</h4>
-							</div>
-							<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank"><i class="fa fa-github fa-5x"></i></a>
-							<div class="card-block">
-								<p class="card-text">Access the source of the library you're using to understand better its logic.</p>
-								<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank">GitHub</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		
 		<!-- other product !-->
 		<div id="product">
 			<div class="container">
@@ -318,15 +375,14 @@ foreach(var item in list)
 					<div class="col-lg-3">
 						<h3>Entity Framework</h3>
 						<ul>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/" target="_blank">Entity Framework Extensions</a></li>
-							<li><a href="https://github.com/zzzprojects/EntityFramework-Plus" target="_blank">Entity Framework Plus (EF+)</a></li>
+							<li><a href="http://entityframework-extensions.net/" target="_blank">Entity Framework Extensions</a></li>
+							<li><a href="http://entityframework-plus.net/" target="_blank">Entity Framework Plus (EF+)</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
 						<h3>Bulk Operations</h3>
 						<ul>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/entity-framework-extensions/" target="_blank">.NET Entity Framework Extensions</a></li>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/bulk-operations/" target="_blank">.NET Bulk Operations</a></li>
+							<li><a href="http://bulk-operations.net/" target="_blank">Bulk Operations</a></li>
 						</ul>
 					</div>
 					<div class="col-lg-3">
@@ -339,7 +395,7 @@ foreach(var item in list)
 					<div class="col-lg-3">
 						<h3>Others</h3>
 						<ul>
-							<li><a href="http://www.zzzprojects.com/products/dotnet-development/extension-methods/" target="_blank">Extension Methods</a></li>
+							<li><a href="https://github.com/zzzprojects/Z.ExtensionMethods" target="_blank">Extension Methods</a></li>
 							<li><a href="https://github.com/zzzprojects/LINQ-Async" target="_blank">LINQ Async</a></li>
 						</ul>
 					</div>
@@ -360,16 +416,16 @@ foreach(var item in list)
 					<div class="col-lg-6 text-right-lg-up social">
 						<a href="https://www.facebook.com/zzzprojects" target="_blank"><i class="fa fa-facebook"></i></a>
 						<a href="https://twitter.com/zzzprojects" target="_blank"><i class="fa fa-twitter"></i></a>
-						<a href="https://plus.google.com/+Zzzprojects_NetSQL/posts" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<a href="https://plus.google.com/+Zzzprojects_NetSQL" target="_blank"><i class="fa fa-google-plus"></i></a>
 						<a href="http://zzzprojects.us9.list-manage.com/subscribe?u=cecbc4775cf67bf1ff82018af&id=4765ffa5f8" target="_blank"><i class="fa fa-newspaper-o"></i></a>
 					</div>
 				</div>
 			</div>
 		</footer>
 
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://entityframework-plus.net/js/tether.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -388,287 +444,5 @@ foreach(var item in list)
 		return false;
 	  }
 	</script>
-  </body>
+	</body>
 </html>
-
-<style>
-/* general */
-* {
-	 font-family: "Bitter",Georgia,"Times New Roman",serif;
-}
-.highlight * {
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
-}
-.text-bold {
-	font-weight: 700;
-}
-.text-green {
-	color: rgb(68, 157, 68);
-}
-@media (max-width: 61em) {
-	.text-center-md-down {
-		text-align: center;
-	}
-}
-@media (max-width: 33em) {
-	.text-center-xs-down {
-		text-align: center;
-	}
-}
-@media (min-width: 62em) {
-	.text-right-lg-up {
-		text-align: right;
-	}
-}
-
-/* section general */
-#top-header {
-	background-color: #111;
-	border-bottom: 1px solid #000;
-	font-size: 14px;
-	padding: 5px 0px;
-}
-header {
-	background: -moz-linear-gradient(top, #222, #333);
-    background: -webkit-linear-gradient(top, #222, #333);
-    background: -ms-linear-gradient(top, #222, #333);
-    background: -o-linear-gradient(top, #222, #333);
-    background: linear-gradient(top, #222, #333);
-	border-bottom: 1px solid #111;
-	border-top: 1px solid #333;
-	padding: 40px 0px;
-}
-#announcement {
-	background-color: #c00;
-	color: #f1f1f1;
-	font-weight: 700;
-	font-style: italic;
-	padding: 5px; 0px;
-}
-#feature {
-    background: -moz-linear-gradient(top, #ddd, #f2f2f2);
-    background: -webkit-linear-gradient(top, #ddd, #f2f2f2);
-    background: -ms-linear-gradient(top, #ddd, #f2f2f2);
-    background: -o-linear-gradient(top, #ddd, #f2f2f2);
-    background: linear-gradient(top, #ddd, #f2f2f2);
-	border-bottom: 1px solid #ddd;
-    border-top: 1px solid #eee;
-	padding-bottom: 60px;
-}
-#pricing {
-	background-color: #fefefe;
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-#support {
-	background: -moz-linear-gradient(top, #eee, #bbb);
-    background: -webkit-linear-gradient(top, #eee, #bbb);
-    background: -ms-linear-gradient(top, #eee, #bbb);
-    background: -o-linear-gradient(top, #eee, #bbb);
-    background: linear-gradient(top, #eee, #bbb);
-	padding-top: 60px;
-	padding-bottom: 60px;
-	border-bottom: 1px solid #aaa;
-	border-top: 1px solid #ccc;
-}
-#product {
-    background: -moz-linear-gradient(top, #111, #222);
-    background: -webkit-linear-gradient(top, #111, #222);
-    background: -ms-linear-gradient(top, #111, #222);
-    background: -o-linear-gradient(top, #111, #222);
-    background: linear-gradient(top, #111, #222);
-	border-bottom: 1px solid #111;
-	border-top: 1px solid #333;
-	color: #fefefe;
-	padding: 20px 0px;
-}
-footer {
-	background: -moz-linear-gradient(top, #333, #222);
-    background: -webkit-linear-gradient(top, #333, #222);
-    background: -ms-linear-gradient(top, #333, #222);
-    background: -o-linear-gradient(top, #333, #222);
-    background: linear-gradient(top, #333, #222);
-	border-top: 1px solid #444;
-	color: #666;
-	padding-top: 5px;
-	padding-bottom: 5px;
-}
-
-/* top-header */
-#top-header a {
-	color: #fefefe;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-decoration: none;
-} 
-#top-header a:hover {
-	opacity: 0.7;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-/* header */
-header .card {
-	background-color: transparent;
-	border: none;
-	color: #f1f1f1;
-}
-header .card h3 {
-	font-size: 3.0rem;
-}
-header .card h1 {
-	font-size: 1.3rem;
-}
-header .card hr {
-	border-color: initial;
-}
-header .card .lead .btn {
-	width: 175px;
-}
-header .card .lead .btn-left {
-	margin-right: 20px;
-}
-header .card .lead .btn span {
-	display: inline-block;
-	height: 40px;
-}
-header .card .lead .btn span span {
-	vertical-align : middle;
-}
-header .card .lead .text-muted {
-	font-size: 14px;
-	padding-top: 10px;
-}
-header .card .card-code {
-	background-color: #f1f1f1;
-	border: 2px solid #444;
-	color: #000;
-	min-height: 350px;
-}
-header .card .card-code {
-	padding: 0px;
-}
-header .card .card-code .highlight,
-header .card .card-code .highlight pre {
-	background-color: transparent;
-	border: none;
-}
-@media (max-width: 33em) {
-	header .card h1 {
-		font-size: 2.5rem;
-	}
-	header .card .lead .btn {
-		margin-bottom: 20px;
-	}
-}
-
-/* feature */
-#feature h2 {
-	font-size: 42px;
-	letter-spacing: 4px;
-	padding-top: 60px;
-	text-align: center;
-}
-#feature h3 {
-	letter-spacing: 0.5px;
-	font-size: 16px;
-	text-decoration: underline;
-}
-#feature .btn {
-	margin-top: 40px;
-}
-@media (min-width: 62em) {
-	#feature .row .col-lg-6:first-child {
-		padding-right: 45px;
-	}
-	#feature .row .col-lg-6:last-child {
-		padding-left: 45px;
-	}
-}
-
-/* pricing */
-#pricing h2 {
-	margin-bottom: -10px;
-}
-#pricing .table thead th {
-	text-align: center;
-}
-#pricing .table td {
-	text-align: center;
-}
-#pricing .fa-times {
-	color: #c9302c;
-}
-#pricing .fa-check-square-o {
-	color: #449D44;
-}
-
-/* support */
-#support {
-	text-align: center;
-}
-#support h2 {
-	padding-bottom: 20px;
-}
-#support h3 {
-	font-size: 20px;
-	padding-bottom: 40px;
-}
-#support .card {
-	border: 0.0625rem solid #ccc;
-}
-#support .card-text {
-	min-height: 75px;
-}
-#support i {
-	color: #0275d8;
-}
-
-/* product */
-#product h3 {
-	letter-spacing: 1px;
-	font-size: 18px;
-	font-weight: 700;
-}
-#product ul {
-	list-style: none;
-	padding-left: 0px;
-}
-#product ul li {
-	padding-top: 5px;
-}
-#product a {
-	color: #999;
-	font-size: 14px;
-	letter-spacing: 0.5px;
-}
-#product a:hover {
-	color: #fefefe;
-	opacity: 0.9;
-	text-decoration: none;
-    transition: all 0.4s ease-in-out 0s;
-}
-
-/* footer */
-@media (max-width: 61em) {
-  footer {
-	padding: 20px 0;
-  }
-}
-footer hr {
-	border-color: #666;
-	margin: 20px;
-}
-footer a {
-	color: #666;
-}
-footer a:hover {
-	color: #666;
-	opacity: 0.7;
-	text-decoration: none;
-    transition: all 0.4s ease-in-out 0s;
-}
-footer .social a {
-	font-size: 24px;
-	padding: 0px 10px;
-}
-</style>
