@@ -49,8 +49,8 @@ layout: post
 								<h1>Evaluate, Compile and Execute dynamic C# code and expression at runtime</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
-									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
-									<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
+									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
+									<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" class="btn btn-primary btn-lg btn-right" role="button" onclick="ga('send', 'event', { eventAction: 'github'});"><span><i class="fa fa-github fa-2x"></i>&nbsp;<span>GitHub</span></span></a>
 									<p class="text-muted">* FREE Version limited to 50 characters</p>		
 								</div>
 							</div>
@@ -232,10 +232,10 @@ var name = nameGetter(customer);
 							<div class="card-block">
 								<h4 class="card-title">Documentation</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank"><i class="fa fa-folder-open fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-folder-open fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Consult our complete documentation to help you getting started.</p>
-								<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank">Documentation</a>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET/wiki" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">Documentation</a>
 							</div>
 						</div>
 					</div>
@@ -245,10 +245,10 @@ var name = nameGetter(customer);
 							<div class="card-block">
 								<h4 class="card-title">Forum</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank"><i class="fa fa-weixin fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank" onclick="ga('send', 'event', { eventAction: 'forum'});"><i class="fa fa-weixin fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Visit the forum to propose new features or to discuss about the library.</p>
-								<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank">Forum</a>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET/issues" target="_blank" onclick="ga('send', 'event', { eventAction: 'forum'});">Forum</a>
 							</div>
 						</div>
 					</div>
@@ -258,10 +258,10 @@ var name = nameGetter(customer);
 							<div class="card-block">
 								<h4 class="card-title">Open Source</h4>
 							</div>
-							<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank"><i class="fa fa-github fa-5x"></i></a>
+							<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});"><i class="fa fa-github fa-5x"></i></a>
 							<div class="card-block">
 								<p class="card-text">Access the source of the library you're using to understand better its logic.</p>
-								<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank">GitHub</a>
+								<a href="https://github.com/zzzprojects/Eval-Expression.NET" target="_blank" onclick="ga('send', 'event', { eventAction: 'github'});">GitHub</a>
 							</div>
 						</div>
 					</div>
@@ -287,7 +287,7 @@ var name = nameGetter(customer);
 						<hr class="m-y-md" />
 						<p class="pricing-tagline">Want to evaluate C# code directly in SQL Server? <a href="http://eval-sql.net/">Eval-SQL.NET</a></p>
 						<hr class="m-y-md" />
-						<p>Every month, a <a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
+						<p>Every month, a <a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" onclick="ga('send', 'event', { eventAction: 'download'});">FREE trial</a> of the PRO version is available to let you evaluate all its features without limitations.</p>						
 					</div>
 					<div class="col-lg-6">
 						<table class="table table-hover table-bordered">
