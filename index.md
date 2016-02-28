@@ -12,7 +12,7 @@ layout: post
 		<!-- seo !-->
 		<meta name="description" content="Evaluate, Compile and Execute dynamic C# code and expression at runtime">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB">
-		<title>C# Eval Function | C# Expression Evaluator to Evaluate, Compile and Execute dynamic C# code and expression at runtime.</title>
+		<title>C# Eval Function | .NET Expression Evaluator to Evaluate, Compile and Execute dynamic C# code and expression at runtime | Fast C# Arithmetic, Math and Regular Expression Evaluator.</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
@@ -46,7 +46,7 @@ layout: post
 							<div class="card-block">
 								<h3 class="card-title">Eval Expression.NET</h3>
 								<hr class="m-y-md" />
-								<h1>Evaluate, Compile and Execute dynamic C# code and expression at runtime</h1>
+								<h1>Evaluate, Compile and Execute C# Dynamic Code and Expression at Runtime</h1>
 								<hr class="m-y-md" />
 								<div class="lead">
 									<a href="https://www.nuget.org/packages/Z.Expressions.Eval/" target="_blank" class="btn btn-success btn-lg btn-left" role="button" onclick="ga('send', 'event', { eventAction: 'download'});"><span><i class="fa fa-cloud-download fa-2x"></i>&nbsp;<span>Download</span></span></a>
