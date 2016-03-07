@@ -329,11 +329,11 @@ var name = nameGetter(customer);
 							<fieldset class="form-group">
 								<input type="hidden" name="on0" value="Seats">
 								<select name="os0" class="form-control">
-									<option value="1 seat">Eval Expression.NET $599 (1 seat)</option>
-									<option value="2-4 seats" selected>Eval Expression.NET $799 (2-4 seats)</option>
-									<option value="5-9 seats">Eval Expression.NET $999 (5-9 seats)</option>
-									<option value="10-14 seats">Eval Expression.NET $1199 (10-14 seats)</option>
-									<option value="15-19 seats">Eval Expression.NET $1399 (15-19 seats)</option>
+									<option value="1 seat">Eval Expression.NET $199 (1 seat)</option>
+									<option value="2-4 seats" selected>Eval Expression.NET $249 (2-4 seats)</option>
+									<option value="5-9 seats">Eval Expression.NET $299 (5-9 seats)</option>
+									<option value="10-14 seats">Eval Expression.NET $349 (10-14 seats)</option>
+									<option value="15-19 seats">Eval Expression.NET $399 (15-19 seats)</option>
 								</select> 
 							</fieldset>
 							<div class="checkbox">
