@@ -101,7 +101,7 @@ layout: post
 						<!-- navbar-bar-header !-->
 						<ul class="nav navbar-nav navbar-nav-header">
 							<li class="nav-item">
-								<h1>Eval Expression.NET</h3>
+								<h1>Eval Expression.NET
 								<small>C# Eval Function</small>
 								</h1>
 							</li>
