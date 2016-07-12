@@ -249,7 +249,7 @@ int result = Eval.Execute<int>(@"
 {% highlight csharp %}
 int result = Eval.Execute<int>(@"
 var list = new List<int>() { 1, 2, 3, 4, 5 };
-return list.Where(x => x > X).Take(Y).Count();
+return list.Where(x => x > X).Take(Y).Count();");
 {% endhighlight %}
 					</div>
 				</div>
