@@ -12,7 +12,7 @@ layout: post
 		<!-- seo !-->
 		<meta name="description" content="Evaluate, Compile and Execute dynamic C# code and expression at runtime">
 		<meta name="keywords" content="Eval, Evaluate, Compile, Execute, Expression, Dynamic, Runtime, .NET, dotnet, C#, CSharp, VB">
-		<title>C# Eval Function | .NET Expression Evaluator to Evaluate, Compile and Execute dynamic C# code and expression at runtime | Fast C# Arithmetic, Math and Regular Expression Evaluator.</title>
+		<title>C# Eval Function | Expression Evaluator | .NET Expression Evaluator to Evaluate, Compile and Execute dynamic C# code and expression at runtime | Fast C# Arithmetic, Math and Regular Expression Evaluator.</title>
 		
 		<!-- icon/css !-->
 		<link rel="icon" type="image/png" href="http://entityframework-plus.net/images/logo.png">
